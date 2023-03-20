@@ -1,0 +1,206 @@
+{
+    "translation": {
+
+        "home0": "Accueil",
+        "home1": "À propos de nous",
+        "home2": "Produits",
+        "home3": "Catégorie",
+        "home4": "Services",
+        "home5": "Contact",
+
+        "childrenLab0": "Serveurs & Baie de stockage",
+        "childrenLab1": "Équipements Réseau",
+        "childrenLab2": "Pièces détachées",
+        "childrenLab3": "Audiovisuel & Conférence",
+        "childrenLab4": "Autres",
+
+        "childrenSubLab0": "Serveurs rackables, Serveurs tours, Serveurs Power Edge & Baie de stockage",
+        "childrenSubLab1": "Switchs, Routeurs, Ip Phones & Sfp",
+        "childrenSubLab2": " Disques Durs, Ram, Batterie & Cartes Mères|Cpu",
+        "childrenSubLab3": "Audiovisual & Apc",
+        "childrenSubLab4": "Ubiquiti, Mikrotik & Tplink",
+
+        "WhoWe": "QUI NOUS SOMMES",
+        "heaAboutUs": "À propos de nous",
+        "QualityText": "FD GROUP est une société de vente de matériel informatique qui propose des solutions adaptées à vos besoins et garantit la qualité de votre infrastructure avec nos produits et nos services avant et après vente de manière efficace et efficiente.",
+
+
+        "Learn": "Apprendre encore plus",
+
+        "Founded1": "Foundation",
+        "Abaut1": "Fondé avec une vision claire d'offrir une expérience client parfaite, FD GROUP est un fournisseur de confiance d'équipement d’IT neuf & reconditionnés pour la maintenance et l'optimisation informatique des entreprises. FD GROUP est un broker informatique qui vous fournit les infrastructures dont votre parc informatique a besoin.",
+
+        "FDGroup1": "Operation",
+        "About2": "FD Group opère dans tout ce qui est prestation de services, fournitures d'équipements IT et call center téléphonie. Nous vous proposons une large variété des équipements multimarques comme : routers, onduleurs, switchs, solutions visioconférence et audiovisuel, serveurs, solutions microsoft, téléphonie entre autres. Nous fournissons de la pièce à la configuration complète.",
+
+        "Mission": "Mission",
+
+        "About3": "La mission de FD GROUP est de vous offrir des solutions adapté à vos besoins, vous fournir et assurer la qualité des vos infrastructure avec nos produits et nos services avant et après vente, vous assister en toute efficacité et efficience, vous livrer en toute rapidité et vous FIDÉLISER.",
+
+
+
+        "Text0": "Pourquoi choisir",
+        "Text1": "FD GROUP aide les entreprises africaines à répondre à leurs demandes et attentes en matière d'infrastructure informatique évolutive et rentable. Aujourd'hui, nous servons des clients dans plus de 30 pays et proposons une large gamme de d'équipements de stockage, de conferencing, matériel réseau, téléphonie de grands fabricants tels qu'",
+        "TextIn": "IBM, APC, HP, LOGITECH, CISCO, TP-LINK et plus encore",
+
+        "Text2": "Chez FD GROUP, nous recherchons - et respectons - la qualité des produits que nous commercialisons et croyons qu'un excellent service client est au cœur de l'expérience d'achat",
+
+        "TextList1": "Prix compétitifs sur le marché",
+        "TextList2": "Cours délais de livraison",
+        "TextList3": "Services avant et après vente",
+        "TextList4": "Service client à votre écoute 24h/24 & 7j/7",
+
+        "Text4": "Grâce à nos partenaires transporteurs et transitaires, nous vous offrons une variété d'options d'expédition en fonction de vos besoins.",
+
+
+        "suport1": "La Réféence Africaine en IT",
+        "suport2": "Nous avons travaillé avec des clients partout en Afrique, fournissant un support technique",
+
+        "name1": "Fourniture des équipements IT",
+        "name2": "Installation",
+        "name3": "Maintenance",
+        "name4": "Call center téléphonie",
+
+        "Corporation": "Corporation",
+
+        "prodCard0": "Retrouvez ici nos meilleurs produits",
+        "prodCard1": " Nous avons des clients dans plus de 30 pays d'Afrique, vendant du matériel informatique et fournissant un support technique.",
+
+        "Server1": "Serveurs & Baie de stockage",
+        "Server2": "Équipements Réseau",
+        "Server3": "Audiovisuel & Conférence",
+        "Server4": "AUDIOVISUEL & CONFÉRENCES",
+
+        "description1": "Serveurs de stockage de fichiers en général et structurés pour les bases de données.",
+        "description2": "Notre stock contient des appareils réseau très sophistiqués.",
+        "description3": "Trouvez le processeur et les autres composants.",
+        "description4": "Trouvez votre meilleur équipement audiovisuel et de conférence.",
+        "btView": "Voir plus",
+
+        "swip1": "Nos produits",
+        "swip2": "Veuillez regarder nos produits",
+
+        "Head0": "Nos clients parlent",
+        "Head1": "Client satisfait",
+        "Head2": "Client satisfait",
+        "Head3": "Client satisfait",
+        "Head4": "Client satisfait",
+
+        "Testm0": "Des témoins qui travaillent avec nous et qui ont donné leur avis sur nos services.",
+        "Testm1": "J'achète depuis longtemps des équipements du FD Group, j'aime beaucoup les performances, mes produits arrivent à temps. Je recommande FD Group à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
+
+        "Testm2": "J'achète depuis longtemps des équipements du FD Group, j'aime beaucoup la performance, mes produits arrivent à temps. Je recommande FD Group à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
+
+        "Testm3": "J'achète depuis longtemps des équipements du FD Group, j'aime beaucoup la performance, mes produits arrivent à temps. Je recommande FD Group à tous ceux qui souhaitent acquérir du matériel informatique pour leur entreprise.",
+
+        "Title1": "Ingénieur de Données et Logiciels",
+        "Maques": "Marques commercialisées",
+
+        "CarousTitle0": "FD GROUP",
+        "CarousTitle1": "Ton Equipe",
+        "CarousTitle2": "Qualité",
+        "CarousSubTitle0": "Trust IT Power",
+        "CarousSubTitle1": "Motivez votre équipe avec un équipement de haute qualité",
+        "CarousSubTitle2": "Optez pour la qualité de nos produits",
+        "CarousText0": "Le comité de projet est une ressource exclusive pour les travaux contractuels. Il est parfait pour les indépendants, les agences et les travailleurs au noir",
+
+        "CarousText1": "Nous vendons des produits de haute performance qui peuvent créer un environnement plus dynamique dans votre entreprise.",
+        "CarousText2": "La qualité des produits est constituée de nos marques de fabrique.",
+        "CarousBtn0": "Apprendre encore plus",
+        "CarousBtn1": "Voir plus",
+
+        "HeadProd0": "Nos produits",
+        "HeadProd1": "Serveurs & Baie de stockage",
+        "HeadProd2": "Équipements Réseau",
+        "HeadProd3": "Pièces détachées",
+        "HeadProd4": "Audiovisuel et conférences",
+
+        "SubHead0": "utiliser partout!",
+
+        "TextProd0": "Retrouvez nos modèles de serveurs ici. Nous vous présentons les modèles suivants : Serveurs Rackmount, Serveurs tours, Serveurs Power Edge et Baie de stockage. Cliquez sur le bouton ci-dessous pour le découvrir.",
+
+        "TextProd1": "Retrouvez nos modèles de périphériques réseau ici. Nous vous présentons les modèles suivants : Switchs, Routeurs, Téléphones IP et SFP. Cliquez sur le bouton ci-dessous pour le découvrir.",
+
+        "TextProd2": "Retrouvez nos modèles d'appareils réseau ici. Nous vous présentons les modèles suivants : Disques, RAM, Batterie, Cartes mères et CPU. Cliquez sur le bouton ci-dessous pour le découvrir.",
+
+        "TextProd3": "Retrouvez nos produits audiovisuels et de conférence dans différents modèles des marques suivantes : Logitech, Cisco, Jabra, Polycom, Ibm, HP, Dell...",
+
+        "btnProduct": "Voir plus ici",
+
+        "ContactFormH": "Contact",
+        "ContactText0": "Remplissez le formulaire ci-dessous pour contacter",
+        "ContactText1": "Votre Nom",
+        "ContactText2": "E-mail",
+        "ContactText3": "Message",
+        "ContactBtn": "Envoyer message",
+        "Contactdescription": "Votre message a été envoyé avec succès.",
+
+        "ServiceH0": "NOS DOMAINES D'EXPERTISE",
+        "ServiceH1": "ACTIVITÉ DU FD-GROUPE ",
+
+        "ServiceSubH0": "Switch",
+        "ServiceSubH1": "Installation informatique",
+        "ServiceSubH2": "Maintenance",
+        "ServiceSubH3": "Notre service client",
+
+        "ServiText0": "Le Groupe FD intervient dans tout ce qui est prestation de services, fourniture d'équipements et centre d'appel téléphonique. Nous proposons une grande variété d'équipements multimarques.",
+
+        "ServiText1": "Nous satisfaisons la demande telle que le matériel informatique d'un fournisseur fiable pour l'utilisateur ou le consommateur. Nous vendons des équipements d'un fournisseur à un seul site dans le but de faciliter le processus de création de votre entreprise.",
+
+        "ServiText2": "Nous avons apporté un soutien et une attention totale au client, en cas d'installation du matériel acheté dans notre entreprise.",
+        "ServiText3": "Le technicien de maintenance informatique assure la maintenance et la réparation de matériel informatique. Nous pouvons également installer de nouveaux équipements ou former les utilisateurs",
+
+        "ServiText4": "Notre équipe de support client est composée de personnes qualifiées et capables, travaillant 24h/7j pour fournir de support lorsque nos clients ont des problèmes avec les produits ou services de notre société et pour s'assurer que le problème est résolu.",
+
+        "ServiceH2": "TECHNOLOGIE",
+        "ServiceH3": "30 pays",
+
+        "ServiText5": "Nous proposons une grande variété d'équipements multimarques tels que : routeurs, onduleurs, commutateurs, solutions de visioconférence et audiovisuelles, serveurs, solutions microsoft, téléphonie, entre autres. Nous fournissons même la configuration complète.",
+
+        "serverpag0": "Serveurs rackables",
+        "serverpag1": "Serveurs tours ",
+        "serverpag2": "Serveurs Power Edge",
+        "serverpag3": "Baie de stockage",
+
+        "ServiTexttitle1": " Prix $",
+        "ServiTexttitle2": "Délais",
+        "ServiTexttitle3": "Services",
+
+        "ServiTextCaerd1": "Des prix compétitifs sur le marché",
+        "ServiTextCaerd2": "Avec une hotline",
+        "ServiTextCaerd3": "Délais de livraison courts",
+        "ServiTextCaerd4": "Ventes et services de vente",
+
+
+        "headDivic": "Équipements Réseau",
+        "Divice0": "Switchs",
+        "Divice1": "Routeurs",
+        "Divice2": "IP Phones",
+        "Divice3": "SFP",
+
+        "headAudiovisuel": "Audiovisuel & Conférence",
+        "audioVisuel0": "Audio-visuel",
+        "audioVisuel1": "APC",
+
+        "headParts": "Pièces détachées",
+        "Part0": " Disques Durs, batterie et câble",
+        "Part1": "Ram, Cartes Mères et CPU",
+
+        "headOther": "Autres produits",
+        "pOther0": "UBIQUITI",
+        "pOther1": "MIKROTIK",
+        "pOther2": "TPLINK",
+
+        "fOff": "NOS BUREAUX",
+        "fContactUs": "Contactez-nous",
+        "fMorocco": "Maroc",
+        "fCompany": "Entreprise",
+        "fTermService": "Conditions d'utilisation",
+        "fSupport": "Support",
+        "fPrivPolicy": "Politique de Confidentialité",
+        "fSale": "Vente",
+        "fStay": "Rester à jours",
+        "fReserved": "© 2023 Groupe DF. Tous les droits sont réservés",
+        "fHelpCenter": "Centre d'aide"
+    }
+}
