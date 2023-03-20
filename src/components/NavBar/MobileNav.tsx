@@ -58,9 +58,7 @@ const MobileNav = () => {
               <MobileNavItem  href={"/contact"}> 
               {t("home5")}
               </MobileNavItem>
-           
-             
-             
+          
              </Stack> 
           </DrawerBody>
         </DrawerContent>
@@ -70,36 +68,3 @@ const MobileNav = () => {
 }
 export default MobileNav;
 
-
-// const Nav_Prps = [
-//   {
-   
-//     title: "home0",
-//     href: "/"
-//   },
-
-//   {
-//     title: "home1",
-//     href:"/about"
-//   },
-//   {
-  
-//     title: "home2",
-//     href:"/products"
-//   },
-//   {
-  
-//     title: "home3",
-    
-//   },
-//   {
-
-//     title: "home4",
-//     href:"/services"
-//   },
-//   {
-  
-//     title:"home5",
-//     href:"/contact"
-//   }
-// ]

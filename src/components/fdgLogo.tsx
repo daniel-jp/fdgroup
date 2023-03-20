@@ -2,10 +2,7 @@ import React from 'react';
 
 function FdgLogo() {
         return (
-                // <div>
-                //   <Box w={'80px'} h={'80px'}>
-                //     <Image src="/src/assets/logo/log-2.png" alt="logo" /></Box>
-                // </div>
+              
 
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
                         width="40.000000pt" height="40.000000pt" viewBox="0 0 2000.000000 2000.000000"

@@ -74,9 +74,7 @@ const TestimonialAvatar = ({ src, name }: { src: string; name: string;}) => {
             {name} <ArrowSquareOut color="black" size={18} />
           </Link>
         </Text>
-        {/* <Text fontSize={"sm"}  color={useColorModeValue("gray.600", "gray.400")}>
-          {title}
-        </Text> */}
+     
       </Stack>
     </Flex>
   );
