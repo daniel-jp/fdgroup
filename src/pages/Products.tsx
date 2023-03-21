@@ -26,6 +26,7 @@ import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import Layout from '../layout/Layout';
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 
 const sr = ScrollReveal();
 function Products() {
@@ -459,8 +460,10 @@ function Products() {
 
           </Stack>
         </Box>
+        <BackToTopButton />
 
-      </Layout> </Box></>
+      </Layout> 
+    </Box></>
   );
 }
 export default Products;

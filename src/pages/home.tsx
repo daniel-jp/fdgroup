@@ -3,6 +3,7 @@ import '@fontsource/inter/600.css';
 import { Box, Flex } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Footer from '../components/Footer/Footer';
 import ProdCard from '../components/Home/FdCard';
 import FdCarousel from '../components/Home/FdCarousel';
@@ -30,6 +31,7 @@ export default function Home() {
         </Flex>
       </SimpleLayout>
       <Marque />
+      <BackToTopButton />
       <Footer />
     </Box>
   );

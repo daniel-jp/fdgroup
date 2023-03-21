@@ -23,6 +23,7 @@ import React, { ReactNode, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/NavBar/NavBar';
 import Layout from '../layout/Layout';
@@ -408,6 +409,8 @@ function Services() {
           </Stack>
         </Container>
       </Box>
+      <BackToTopButton />
+
       <Footer/>
     </>
   );

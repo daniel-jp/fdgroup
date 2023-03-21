@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import DeviceCards from '../components/DeviceCards/DeviceCards';
 import DeviceProduct1 from '../devices/DeviceProduct1';
 import DeviceProduct2 from '../devices/DeviceProduct2';
@@ -164,6 +165,7 @@ function Devices() {
         </SimpleGrid>
       </Box>
         </Box>
+        <BackToTopButton />
 
     </Layout>
     </Box>

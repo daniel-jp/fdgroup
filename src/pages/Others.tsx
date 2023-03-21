@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import FdgLogo from '../components/fdgLogo';
 import OtherProductCard from '../components/OtherProductCard/OtherProductCard';
 import Layout from '../layout/Layout';
@@ -140,7 +141,10 @@ function Others() {
           )) }
         </SimpleGrid>
 
-          </Box>    </Box>
+          </Box>   
+          </Box>
+          <BackToTopButton />
+
       </Layout>
 
        </Box>

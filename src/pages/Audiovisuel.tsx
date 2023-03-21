@@ -8,6 +8,7 @@ import ScrollReveal from 'scrollreveal';
 import AudiovisuelProductCard1 from '../Audiovisuel/AudiovisuelProductCard1';
 import AudiovisuelProductCard2 from '../Audiovisuel/AudiovisuelProductCard2';
 import AudiovisuelProductCard from '../components/AudiovisuelProductCard/AudiovisuelProductCard';
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import FdgLogo from '../components/fdgLogo';
 import Layout from '../layout/Layout';
 
@@ -108,6 +109,8 @@ function Audiovisuel() {
         </SimpleGrid>
           </Box>
       </Box>
+      <BackToTopButton />
+
     </Layout>  </Box>
   );
 }

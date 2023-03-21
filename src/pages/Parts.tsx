@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import PartProductCard from '../components/PartProductCard/PartProductCard';
 import Layout from '../layout/Layout';
 import PartProduct1 from '../parts/PartProduct1';
@@ -106,6 +107,8 @@ function Parts() {
             </SimpleGrid>
           </Box>
         </Box>
+        <BackToTopButton />
+
       </Layout>
     </Box>
   );

@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import CardServerProduct from '../components/Servers/CardServerProduct';
 import Layout from '../layout/Layout';
 import ServerProductsServer1 from '../servers/ServerProductsServer1';
@@ -173,7 +174,7 @@ function Server() {
         </SimpleGrid>
       </Box>
       </Box>
-
+      <BackToTopButton />
     </Layout>
     </Box>
   );

@@ -32,6 +32,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
+import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Layout from '../layout/Layout';
 
 const sr = ScrollReveal();
@@ -272,7 +273,8 @@ const Contact: React.FC = () => {
     </Stack>   
   </Flex>
  </Stack>
-    
+ <BackToTopButton />
+
 </Layout>
     );
 }
