@@ -170,7 +170,7 @@ function Footer() {
                     <LinkedinLogo color="#822727" size={ 32 } />
                   </Text>
                 </SocialButton>
-                <SocialButton label={ "Globe" } href={ "www.fdgroup.company" }>
+                <SocialButton label={ "Globe" } href={ "https://www.fdgroup.company/" }>
                   <Text
                     _hover={ {
                       cursor: "pointer",

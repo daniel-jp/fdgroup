@@ -201,7 +201,7 @@ const Contact: React.FC = () => {
                 bg: 'gray.800'}} icon={<LinkedinLogo size="28px" />} /></Link>
                   
                   <Link href={'https://twitter.com/FDGROUP2'} target="_blank"> <IconButton aria-label="github" variant="ghost" size="lg" isRound={true} _hover={{color:"blue.400",bg: 'gray.800'}} icon={<TwitterLogo size="28px" />} /></Link>
-                  <Link href={'fdgroup.company'} target="_blank"> 
+                  <Link href={'https://www.fdgroup.company/'} target="_blank"> 
                   <IconButton aria-label="discord" variant="ghost" size="lg" isRound={true} _hover={{color:"blue.400",bg: 'gray.800'}} icon={<Globe size="28px" />} /></Link>
                 </HStack>
 
