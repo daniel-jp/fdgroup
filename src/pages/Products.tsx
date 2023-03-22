@@ -25,8 +25,8 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
-import Layout from '../layout/Layout';
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
+import Layout from '../layout/Layout';
 
 const sr = ScrollReveal();
 function Products() {

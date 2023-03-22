@@ -5,7 +5,7 @@ import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
 import '@fontsource/rubik-moonrocks/400.css';
 
-import { EmailIcon, InfoIcon } from '@chakra-ui/icons';
+import { EmailIcon, InfoIcon, LinkIcon, PhoneIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
@@ -163,47 +163,55 @@ const Contact: React.FC = () => {
         
         <Box  alignItems="flex-start"> 
           <VStack alignItems="flex-start"> 
-            <Heading  color={'gray.800'}>{t('ContactFormH')}</Heading>
-
-                  <Text fontSize={'sm'} textAlign={'start'}>
-                    {t('ContactText0')}
-                  </Text> 
+            
+               <Text display={'flex'} fontWeight={500} fontSize={'md'} textAlign={"center"} p={2} px={20}  bg={'red.800'} color={'gray.200'}><Phone size={22} /> {t('ContactFormH')}</Text>
+               <Text fontSize={'sm'} textAlign={'start'}>{t('ContactText0')}</Text> 
                   
             </VStack>
                   
     
-                  <VStack mt={10} spacing={3} alignItems="flex-start">
-                    <Box display={'flex'} p={1} fontSize={{base: '1xl', sm: '1xl'}}>
-                      <Phone color="#C53030" size={30} />
-                      <Text fontSize={'sm'} p={2}>
-                        +244 927 538 808 / +244 931901243
+                <VStack mt={10} spacing={3} alignItems="flex-start">
+                  <Box  pt={2}>
+                      <Text fontSize={ 20 } mb={1} color={ "gray.800" }>
+                      Angola
                       </Text>
-                    </Box> 
-
-                    <Box p={1} display={'flex'} alignContent={'space-between'} fontSize={{base: '1xl', sm: '1xl'}}>
-                      <EnvelopeSimple color="#C53030" size={30} />
-                      <Text p={2}>
+                      <Text fontSize={'sm'}>
+                        Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola  
+                      </Text>
+                      <Text color={"blue.700"} fontSize={'sm'}>
+                      <Link> +244 931 901 243</Link>
+                      </Text>
+                      <Text color={"blue.700"} >
                         info@fdgroup.company
                       </Text>
+                      
                     </Box>
+                    <Box>
+                    <Text fontSize={ 20 } color={ "gray.800" }>
+                      Morocco
+                    </Text>
+                      <Text fontSize={'sm'}>
+                         10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca
+                      </Text>
+                      <Text fontSize={'sm'}>
+                     <Link color={"blue.700"} >+212 772 276 887</Link> 
 
-                    <Box display={'flex'} pt={2} p={1}>
-                      <MapPinLine color={'#C53030'} size={54} />
-                      <Text fontSize={'sm'} p={2}>
-                        Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola  &  10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca
+                      </Text>
+                      <Text color={"blue.700"} >
+                        info@fdgroup.company
                       </Text>
                       
                     </Box>
                   </VStack> 
 
-                <HStack  spacing={5} px={5} pt={10} alignItems="flex-start">
-                <Link href={'https://www.linkedin.com/company/fd-group-sarl/'}   target="_blank"><IconButton aria-label="facebook" variant="ghost" size="lg" isRound={true}
-                  _hover={{color:"blue.400",
-                bg: 'gray.800'}} icon={<LinkedinLogo size="28px" />} /></Link>
+                <HStack  pt={4} >
+                    <Link href={'https://www.linkedin.com/company/fd-group-sarl/'}   target="_blank"><IconButton aria-label="facebook" variant="ghost" size="lg" isRound={true}
+                      _hover={{color:"blue.400",
+                    bg: 'gray.800'}} icon={<LinkedinLogo size="28px" />} /></Link>
                   
-                  <Link href={'https://twitter.com/FDGROUP2'} target="_blank"> <IconButton aria-label="github" variant="ghost" size="lg" isRound={true} _hover={{color:"blue.400",bg: 'gray.800'}} icon={<TwitterLogo size="28px" />} /></Link>
-                  <Link href={'https://www.fdgroup.company/'} target="_blank"> 
-                  <IconButton aria-label="discord" variant="ghost" size="lg" isRound={true} _hover={{color:"blue.400",bg: 'gray.800'}} icon={<Globe size="28px" />} /></Link>
+                    <Link href={'https://twitter.com/FDGROUP2'} target="_blank"> <IconButton aria-label="github" variant="ghost" size="lg" isRound={true} _hover={{color:"blue.400",bg: 'gray.800'}} icon={<TwitterLogo size="28px" />} /></Link>
+                    <Link href={'https://www.fdgroup.company/'} target="_blank"> 
+                    <IconButton aria-label="discord" variant="ghost" size="lg" isRound={true} _hover={{color:"blue.400",bg: 'gray.800'}} icon={<Globe size="28px" />} /></Link>
                 </HStack>
 
         </Box>

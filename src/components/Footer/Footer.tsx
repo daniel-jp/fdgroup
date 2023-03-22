@@ -129,6 +129,12 @@ function Footer() {
                 <Text textAlign={ "justify" } fontSize={ "sm" }>
                   Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola
                 </Text>
+                <Text pb={ "2px" } textAlign={ "justify" } fontSize={ "sm" }>
+                +244 931901243
+                </Text>
+                <Text textAlign={ "justify" } fontSize={ "sm" }>
+                  info@fdgroup.company
+                </Text>
 
                   <Text fontSize={ 20 } color={ "red.400" }>
                   Morocco
@@ -136,14 +142,11 @@ function Footer() {
                 <Text textAlign={ "justify" } fontSize={ "sm" }>
                  10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca
                 </Text>
-                <Text fontSize={ 20 } color={ "red.400" }>
-                  {t("fContactUs")}
-                </Text>
                 <Text pb={ "3px" } textAlign={ "justify" } fontSize={ "sm" }>
                   info@fdgroup.company
                 </Text>
                 <Text pb={ "2px" } textAlign={ "justify" } fontSize={ "sm" }>
-                  +244 927 538 808 / +244 931901243
+                +212 772 276 887
                 </Text>
               </Box>
 

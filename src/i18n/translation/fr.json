@@ -35,12 +35,12 @@
 
         "Mission": "Mission",
 
-        "About3": "La mission de FD GROUP est de vous offrir des solutions adapté à vos besoins, vous fournir et assurer la qualité des vos infrastructure avec nos produits et nos services avant et après vente, vous assister en toute efficacité et efficience, vous livrer en toute rapidité et vous FIDÉLISER.",
+        "About3": "La mission de FD GROUP est de vous offrir des solutions adaptées à vos besoins, vous fournir et assurer la qualité des vos infrastructures avec nos produits et nos services avant et après vente, vous assister en toute efficacité et efficience, vous livrer en toute rapidité et vous FIDÉLISER.",
 
 
 
         "Text0": "Pourquoi choisir",
-        "Text1": "FD GROUP aide les entreprises africaines à répondre à leurs demandes et attentes en matière d'infrastructure informatique évolutive et rentable. Aujourd'hui, nous servons des clients dans plus de 30 pays et proposons une large gamme de d'équipements de stockage, de conferencing, matériel réseau, téléphonie de grands fabricants tels qu'",
+        "Text1": "FD GROUP aide les entreprises africaines à répondre à leurs demandes et attentes en matière d'infrastructure informatique évolutive et rentable. Aujourd'hui, nous servons des clients dans plus de 30 pays et proposons une large gamme d'équipements de stockage, de conferencing, matériel réseau, téléphonie des grands fabricants tels qu'",
         "TextIn": "IBM, APC, HP, LOGITECH, CISCO, TP-LINK et plus encore",
 
         "Text2": "Chez FD GROUP, nous recherchons - et respectons - la qualité des produits que nous commercialisons et croyons qu'un excellent service client est au cœur de l'expérience d'achat",
@@ -50,7 +50,7 @@
         "TextList3": "Services avant et après vente",
         "TextList4": "Service client à votre écoute 24h/24 & 7j/7",
 
-        "Text4": "Grâce à nos partenaires transporteurs et transitaires, nous vous offrons une variété d'options d'expédition en fonction de vos besoins.",
+        "Text4": "Grâce à nos partenaires transporteurs et transitaires, nous vous offrons une variété d'options d'expéditions en fonction de vos besoins.",
 
 
         "suport1": "La Réféence Africaine en IT",
@@ -102,10 +102,11 @@
         "CarousSubTitle0": "Trust IT Power",
         "CarousSubTitle1": "Motivez votre équipe avec un équipement de haute qualité",
         "CarousSubTitle2": "Optez pour la qualité de nos produits",
-        "CarousText0": "Le comité de projet est une ressource exclusive pour les travaux contractuels. Il est parfait pour les indépendants, les agences et les travailleurs au noir",
+
+        "CarousText0": "Notre expertise dans les domaines de l'informatique et de la gestion de projets fait de nous les meilleurs pour vous aider à atteindre vos objectifs",
 
         "CarousText1": "Nous vendons des produits de haute performance qui peuvent créer un environnement plus dynamique dans votre entreprise.",
-        "CarousText2": "La qualité des produits est constituée de nos marques de fabrique.",
+        "CarousText2": "La qualité des produits est constituée de nos marques de fabrique",
         "CarousBtn0": "Apprendre encore plus",
         "CarousBtn1": "Voir plus",
 
@@ -127,7 +128,7 @@
 
         "btnProduct": "Voir plus ici",
 
-        "ContactFormH": "Contact",
+        "ContactFormH": "Contactez-nous",
         "ContactText0": "Remplissez le formulaire ci-dessous pour contacter",
         "ContactText1": "Votre Nom",
         "ContactText2": "E-mail",

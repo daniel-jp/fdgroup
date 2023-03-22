@@ -21,7 +21,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { Tag } from '@chakra-ui/tag';
-import { ArrowRight, CircleWavyQuestion, Eye } from 'phosphor-react';
+import { ArrowRight, CheckCircle, CircleWavyQuestion, Eye } from 'phosphor-react';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
@@ -349,19 +349,16 @@ function About() {
               <Logo />
             </Flex>
 
-            <Box color={"gray.200"} fontSize="sm">
-              {t("Text1")} {t("TextIn")}
+            <Box color={"gray.200"} fontSize="sm">{t("Text1")} {t("TextIn")}
 
-              <Text  fontSize="sm" pt={4} >
-                    {t("Text2")}
-              </Text>
+              <Text fontSize="sm" pt={4} >{t("Text2")}</Text>
             
             </Box>
 
-            <Text pt={2} fontSize={20} color="red.400"> <CheckCircleIcon/> {t("TextList1")} </Text>
-            <Text fontSize={20} color="red.400"><CheckCircleIcon/> {t("TextList2")}</Text>
-            <Text fontSize={20} color="red.400"><CheckCircleIcon/> {t("TextList3")}</Text>
-            <Text fontSize={20} color="red.400"><CheckCircleIcon/> {t("TextList4")}</Text>
+            <Text fontSize={'md'} textAlign={"center"}  display={'flex'} color="red.400"><CheckCircle size={22}/> {t("TextList1")} </Text>
+            <Text fontSize={'md'} textAlign={"center"}  display={'flex'} color="red.400"><CheckCircle size={22}/> {t("TextList2")}</Text>
+            <Text fontSize={'md'} textAlign={"center"}  display={'flex'}  color="red.400"><CheckCircle size={22}/> {t("TextList3")}</Text>
+            <Text fontSize={'md'} textAlign={"center"}  display={'flex'}  color="red.400"><CheckCircle size={22}/> {t("TextList4")}</Text>
             <Text color={"gray.200"} pt={2}  fontSize="sm">{t("Text4")}</Text>
             </Box>
         </VStack>
