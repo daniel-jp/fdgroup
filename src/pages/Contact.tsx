@@ -162,13 +162,11 @@ const Contact: React.FC = () => {
 <Flex flex={1} align={'center'} justify={'center'}>
         
         <Box  alignItems="flex-start"> 
-          <VStack alignItems="flex-start"> 
+          <VStack alignItems="center" maxW={"full"} bg={'red.800'} > 
             
-               <Text display={'flex'} fontWeight={500} fontSize={'md'} textAlign={"center"} p={2} px={20}  bg={'red.800'} color={'gray.200'}><Phone size={22} /> {t('ContactFormH')}</Text>
-               <Text fontSize={'sm'} textAlign={'start'}>{t('ContactText0')}</Text> 
-                  
+               <Text display={'flex'}  fontWeight={500} fontSize={'md'} textAlign={"center"} p={2} px={20}  color={'gray.200'}><Phone size={22} /> {t('ContactFormH')}</Text>
             </VStack>
-                  
+            <Text pt={2} fontSize={'sm'} textAlign={'start'}>{t('ContactText0')}</Text> 
     
                 <VStack mt={10} spacing={3} alignItems="flex-start">
                   <Box  pt={2}>
