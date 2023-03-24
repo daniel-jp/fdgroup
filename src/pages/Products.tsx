@@ -26,6 +26,7 @@ import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 
 const sr = ScrollReveal();
@@ -461,6 +462,8 @@ function Products() {
 
           </Stack>
         </Box>
+
+        <WhatsAppButton />
         <BackToTopButton />
 
       </Layout> 

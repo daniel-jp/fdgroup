@@ -28,6 +28,7 @@ import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Logo from '../components/fdgLogo';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 
 
@@ -356,7 +357,7 @@ function About() {
        </Box>
       </Box>
 
-
+      <WhatsAppButton />
       <BackToTopButton />
 
       </Layout>

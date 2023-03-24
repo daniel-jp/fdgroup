@@ -6,6 +6,7 @@ import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import PartProductCard from '../components/PartProductCard/PartProductCard';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 import PartProduct1 from '../parts/PartProduct1';
 import PartProduct2 from '../parts/PartProduct2';
@@ -107,6 +108,8 @@ function Parts() {
             </SimpleGrid>
           </Box>
         </Box>
+
+        <WhatsAppButton/>
         <BackToTopButton />
 
       </Layout>

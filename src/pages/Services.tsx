@@ -26,6 +26,7 @@ import ScrollReveal from 'scrollreveal';
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/NavBar/NavBar';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 import SimpleLayout from '../layout/SimpleLayout';
 
@@ -407,6 +408,7 @@ function Services() {
           </Stack>
         </Container>
       </Box>
+      <WhatsAppButton />
       <BackToTopButton />
 
       <Footer/>

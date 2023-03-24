@@ -9,6 +9,7 @@ import ScrollReveal from 'scrollreveal';
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import FdgLogo from '../components/fdgLogo';
 import OtherProductCard from '../components/OtherProductCard/OtherProductCard';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 import OtherProduct1 from '../Others/OtherProduct1';
 import OtherProduct2 from '../Others/OtherProduct2';
@@ -143,6 +144,8 @@ function Others() {
 
           </Box>   
           </Box>
+
+          <WhatsAppButton/>
           <BackToTopButton />
 
       </Layout>

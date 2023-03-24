@@ -8,6 +8,7 @@ import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import CardServerProduct from '../components/Servers/CardServerProduct';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 import ServerProductsServer1 from '../servers/ServerProductsServer1';
 import ServerProductsServer2 from '../servers/ServerProductsServer2';
@@ -174,6 +175,7 @@ function Server() {
         </SimpleGrid>
       </Box>
       </Box>
+      <WhatsAppButton />
       <BackToTopButton />
     </Layout>
     </Box>

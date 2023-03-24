@@ -3,11 +3,11 @@ import { Box, Button, IconButton } from '@chakra-ui/react';
 import { WhatsappLogo } from 'phosphor-react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "+212657226746"; // Replace with your phone number
+  const phoneNumber = "+244931901243"; // Replace with your phone number
   const whatsappLink = `https://wa.me/${phoneNumber}`;
 
   return (
-    <>
+    <Box>
       
     <IconButton
      aria-label="Whats App" 
@@ -17,7 +17,7 @@ const WhatsAppButton = () => {
     rel="noopener noreferrer"
     colorScheme="green" 
     position="fixed"
-    bottom="4" mb={20}
+    bottom="20" 
     right="4"
     borderRadius="50%"
     transition="all 0.2s ease-in-out"
@@ -26,7 +26,7 @@ const WhatsAppButton = () => {
     icon={<WhatsappLogo size={32}/>}
   />
    
-    </>
+    </Box>
 
 
 

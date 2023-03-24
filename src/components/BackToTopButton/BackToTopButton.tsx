@@ -1,4 +1,4 @@
-import { IconButton, useColorModeValue } from '@chakra-ui/react';
+import { Box, IconButton, useColorModeValue } from '@chakra-ui/react';
 import { UploadSimple } from 'phosphor-react';
 import React from 'react';
 
@@ -11,11 +11,12 @@ const BackToTopButton: React.FC = () => {
   };
 
   return (
+    <Box>
     <IconButton
       aria-label="Back to Top" 
       icon={<UploadSimple size={32} />}
       onClick={handleClick}
-      position="fixed"
+      position="fixed" 
       bottom="4"
       right="4"
       borderRadius="50%"
@@ -27,6 +28,7 @@ const BackToTopButton: React.FC = () => {
       _hover={{ transform: "scale(1.2)" }}
       _active={{ transform: "scale(0.9)" }}
     />
+    </Box>
   );
 };
 

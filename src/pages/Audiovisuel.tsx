@@ -10,6 +10,7 @@ import AudiovisuelProductCard2 from '../Audiovisuel/AudiovisuelProductCard2';
 import AudiovisuelProductCard from '../components/AudiovisuelProductCard/AudiovisuelProductCard';
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import FdgLogo from '../components/fdgLogo';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 
 const sr = ScrollReveal();
@@ -109,6 +110,7 @@ function Audiovisuel() {
         </SimpleGrid>
           </Box>
       </Box>
+      <WhatsAppButton />
       <BackToTopButton />
 
     </Layout>  </Box>

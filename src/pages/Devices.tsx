@@ -6,6 +6,7 @@ import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import DeviceCards from '../components/DeviceCards/DeviceCards';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import DeviceProduct1 from '../devices/DeviceProduct1';
 import DeviceProduct2 from '../devices/DeviceProduct2';
 import DeviceProduct3 from '../devices/DeviceProduct3';
@@ -165,6 +166,8 @@ function Devices() {
         </SimpleGrid>
       </Box>
         </Box>
+
+        <WhatsAppButton />
         <BackToTopButton />
 
     </Layout>

@@ -33,6 +33,7 @@ import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 
 const sr = ScrollReveal();
@@ -279,6 +280,7 @@ const Contact: React.FC = () => {
     </Stack>   
   </Flex>
  </Stack>
+ <WhatsAppButton />
  <BackToTopButton />
 
 </Layout>
