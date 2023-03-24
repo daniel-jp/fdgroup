@@ -10,6 +10,7 @@ const WhatsAppButton = () => {
     <>
       
     <IconButton
+     aria-label="Whats App" 
     as="a" 
     href={whatsappLink}
     target="_blank" w={50}  h={50}
