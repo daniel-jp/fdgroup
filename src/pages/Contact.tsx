@@ -158,7 +158,7 @@ const Contact: React.FC = () => {
     return (
 <Layout>
        
-<Stack minH={'100vh'} p={2}   py={20} mt={-20} direction={{ base: 'column', md: 'row' }}>           
+<Stack minH={'100vh'}  p={2}   py={20} mt={-20} direction={{ base: 'column', md: 'row' }}>           
 <Flex flex={1} align={'center'} justify={'center'}>
         
         <Box  alignItems="flex-start"> 

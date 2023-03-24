@@ -68,7 +68,7 @@ function FdCard() {
   return (
 
 
-    <Box bg={useColorModeValue("gray.100", "gray.700")}>
+    <Box bg={useColorModeValue("white", "gray.700")} py={8}>
 
       <Container overflowY={"hidden"} overflowX={"hidden"} alignItems={"center"} maxW={"6xl"}>
 

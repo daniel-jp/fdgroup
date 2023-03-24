@@ -24,7 +24,7 @@ const BackToTopButton: React.FC = () => {
       size="lg"
    
       transition="all 0.2s ease-in-out"
-      _hover={{ transform: "scale(1.1)" }}
+      _hover={{ transform: "scale(1.2)" }}
       _active={{ transform: "scale(0.9)" }}
     />
   );

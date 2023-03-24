@@ -111,11 +111,11 @@ function Services() {
 
 
 
-      <Box pb={ 100 } pt={10} bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
+      <Box pb={ 20 }  bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
 
       <SimpleLayout>
       
-        <Box textAlign="center"  bg={ useColorModeValue('white', 'gray.900') }>
+        <Box textAlign="center" h={314}  bg={ useColorModeValue('white', 'gray.900') }>
           <Flex boxShadow={ "8px 0px 0px" }
             mt={ 32 }
             p={ 2 }
@@ -145,7 +145,7 @@ function Services() {
         </Box>
 
 
-          <SimpleGrid  overflowY={'hidden'} overflowX={'hidden'} spacing={ 16 } columns={ { base: 1, sm: 2 } } mt={12}>
+          <SimpleGrid  overflowY={'hidden'} overflowX={'hidden'} spacing={ 4 } columns={ { base: 1, sm: 2 } } mt={4}>
 
 
             {/* FUTURE 1 */ }
@@ -156,15 +156,11 @@ function Services() {
               rounded={ 'md' }
               p={ 6 } 
               overflow={ 'hidden' }>
-              <Stack direction={ 'row' } spacing={ 4 } align={ 'start'}>
+              <Flex direction={ 'row' }align={ 'center'}>
                 <Avatar
-                  src={ '../../assets/services/Imagem1.png' }
-                />
-                <Stack direction={ 'column' } spacing={ 0 } fontSize={ 'sm' }>
-                  <Text fontWeight={600}> {t("name1")} </Text>
-                  <Text color={ 'gray.600' }>Feb 08, 2023 · 6min read</Text>
-                </Stack>
-              </Stack>
+                  src={ '../../assets/services/Imagem1.png' }/>
+                  <Text pl={2}  fontWeight={600}> {t("name1")} </Text>
+              </Flex>
               <Stack>
 
                 <Heading pt={ 3 }
@@ -230,7 +226,7 @@ function Services() {
                 />
                 <Stack direction={ 'column' } spacing={ 0 } fontSize={ 'sm' }>
                   <Text fontWeight={600}>{t("name2")}</Text>
-                  <Text color={ 'gray.600' }>Feb 08, 2023 · 6min read</Text>
+                  <Text color={ 'gray.600' }></Text>
                 </Stack>
               </Stack>
             </Stack>
@@ -253,7 +249,7 @@ function Services() {
                 />
                 <Stack direction={ 'column' } spacing={ 0 } fontSize={ 'sm' }>
                   <Text fontWeight={600}>{t("name3")}</Text>
-                  <Text color={ 'gray.600' }>Feb 08, 2023 · 6min read</Text>
+                  <Text color={ 'gray.600' }></Text>
                 </Stack>
               </Stack>
               <Stack>
@@ -323,10 +319,12 @@ function Services() {
                   src={ '../../assets/services/Imagem4.png' }/>
                 <Stack direction={ 'column' } spacing={ 0 } fontSize={ 'sm' }>
                   <Text fontWeight={600}>{t("name4")}</Text>
-                  <Text color={ 'gray.600' }>Feb 08, 2023 · 6min read</Text>
+                  <Text color={ 'gray.600' }></Text>
                 </Stack>
               </Stack>
             </Stack>
+
+
           </SimpleGrid>
         </SimpleLayout>
       </Box>
@@ -358,7 +356,7 @@ function Services() {
 
 
 
-        <Container className='service8' visibility={'hidden'} maxW={'6xl'} zIndex={10} position={'relative'}>
+        <Container className='service8' visibility={'hidden'} maxW={'7xl'} zIndex={10} position={'relative'}>
           <Stack direction={ { base: 'column', lg: 'row' } }>
             <Stack
               flex={ 1 }

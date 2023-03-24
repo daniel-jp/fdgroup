@@ -103,13 +103,13 @@ function Products() {
 
   return (
     <>
-     <Box bg={"gray.200"} pt={10}>
+     <Box bg={"gray.200"} pt={6}>
     <Layout>
 
         <Box  fontFamily={"'Inter', sans-serif"} color={"gray.600"}
           h="full" w="full" 
           overflowY={'hidden'} overflowX={'hidden'} justifyContent={'center'}>
-
+          <Box textAlign="center" h={314}   bg={ useColorModeValue('white', 'gray.900') }>
             <Flex className='product1'  
               h={ "70px" }
               p={4}
@@ -128,7 +128,7 @@ function Products() {
               </Text>
             </Flex>
 
-    
+        </Box>
       <Divider />
 
 
@@ -136,7 +136,7 @@ function Products() {
 
       {/*   PROD 1 */ }
 
-      <Stack mt={20}
+      <Stack mt={4}
         align={ "center" } bg={'white'} px={4}
         spacing={ { base: 8, md: 10 } }
         py={ { base: 20, md: 28 } }
@@ -218,11 +218,12 @@ function Products() {
 
       {/* PROD 2 */ }
 
-      <Stack  bg={'white'} px={4}mt={8}
+      <Stack  bg={'white'} px={4} mt={4}
         align={ "center" }
         spacing={ { base: 8, md: 10 } }
         py={ { base: 20, md: 28 } }
             direction={{base: "column", md: "row"}}>
+              
         <Flex flex={ 1 } justify={ "center" } align={ "center" } position={ "relative" } w={ "full" }>
          
               <Box className='product4' visibility={'hidden'}
@@ -236,7 +237,7 @@ function Products() {
                   aria-label={"Play Button"}
                   variant={"ghost"}
                   _hover={{bg: "transparent"}}
-                  size={"lg"}
+                  size={"lg"} 
                   color={"white"}
                   position={"absolute"}
                   left={"50%"}
@@ -297,7 +298,7 @@ function Products() {
 
       {/* PROD 3  */ }
 
-     <Stack className='product6' visibility={'hidden'}  bg={'white'} px={4}mt={8}
+     <Stack className='product6' visibility={'hidden'}  bg={'white'} px={4} mt={4}
         align={ "center" }
         spacing={ { base: 8, md: 10 } }
         py={ { base: 20, md: 28 } }
@@ -378,7 +379,7 @@ function Products() {
 
       {/* PROD 4 */ }
 
-          <Stack  bg={'white'} px={4} mt={8} mb={20}
+          <Stack  bg={'white'} px={4} mt={4} mb={20}
             align={"center"}
             spacing={{base: 8, md: 10}}
             py={{base: 20, md: 28}}

@@ -145,19 +145,20 @@ function About() {
   const {t} = useTranslation();
 
   return (
-    <Box bg={"gray.200"} pt={10} >
+    <Box bg={"gray.200"} pt={6} >
       <Layout>
 
         <Box overflowY={"hidden"} overflowX={"hidden"}  fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
-        <Box textAlign="center"    bg={ useColorModeValue('white', 'gray.900') }>
+       
+        <Box textAlign="center" h={"full"} pb={4} bg={ useColorModeValue('white', 'gray.900') }>
 
           <Flex 
-            
-              h={ "70px" } p={4}
+         
+              h={ "70px" } 
               w={260}              
               maxW={ "full" }
               bg={"red.800"}
-              gap={ 4 } justify={'end'}
+             justify={'end'}
               alignItems={ "center" }
               fontSize={ "2xl" } color={"gray.800"}
               fontWeight={ "bold" }
@@ -165,112 +166,102 @@ function About() {
               className="about1" visibility={"hidden"}>
       <Text color={"white"}  m={4} textTransform={'uppercase'}> {t("heaAboutUs")} </Text> 
       </Flex>
-        <Stack  py={6}  className={"about2"} align={'center'}   visibility={"hidden"} mt={20} >
-              <Text display={'flex'} fontWeight={'bold'}>
-               {t("WhoWe")}  <CircleWavyQuestion size={ 20 } />
-              </Text>
-              <Text textAlign={'center'}  fontSize="sm" color={"gray.800"}
-                fontWeight={'bord'} w={{base: 350, sm: 300, md: 400, lg: 900}}>{t("QualityText")}</Text>
+        <Stack px={2} className={"about2"} align={'center'}   visibility={"hidden"} mt={10} >
+              <Text display={'flex'} fontWeight={'bold'}>{t("WhoWe")}  <CircleWavyQuestion size={ 20 } /></Text>
+              <Text  textAlign={'center'}  fontSize="md" color={"gray.800"}
+                fontWeight={'bord'}>{t("QualityText")}</Text>
             </Stack>
        </Box>
     
       <Box as={ "section" }>
-           
-
-
-        <Box  mt={12}>
-          <Box bg={"white"} p={3}
-            marginTop={ { base: "1", sm: "8" } } 
+          
+           {/* // Futer 1 */ }
+          <Flex bg={"white"} py={4}
+            marginTop={ { base: "1", sm: "4" } } 
             display="flex"
             flexDirection={ { base: "column", sm: "row" } }
-            justifyContent="space-between">
+            justify={"space-between"}>
 
-             <Box className={"about3"} visibility={"hidden"}h={500}
-              display="flex" mx={1} 
+             <Box mb={4} p={3} className={"about3"} visibility={"hidden"} 
+                    display="flex" flex="1" flexDirection="column"
+                    justifyContent="center" marginTop={ { base: "3", sm: "0" } }>
+                    <Flex alignItems={ "center" } gap={ 2 }>
+                      <BlogTags  tags={ ["Our vision"] } />
+                      <Eye color={ "#1A202C" } size={ 32 } />
+                    </Flex>
+                    <Heading marginTop="1">
+                      <Link   fontSize="md"
+                      fontWeight={'bord'} textDecoration="none" _hover={ { textDecoration: "none" } }>
+                        {t("Founded1")}
+                      </Link>
+                    </Heading>
+                    <Text
+                      textAlign={ "justify" }
+                      marginTop="2"
+                      color={ useColorModeValue("gray.600", "gray.200") }
+                      fontSize="sm"
+                      fontWeight={'bord'}>
+                      {t("Abaut1")}
+                    </Text>
+                    <Button
+                      top={ 2 }
+                      as={'a'}
+                      bg="white"
+                      fontSize="md"
+                      border={ "1px solid #1A202C" }
+                      textAlign={ "justify" }
+                      w={250}
+                      maxW={ "full" }
+                      _hover={ {
+                        cursor:"pointer",
+                        bg: "red.900",
+                        color: "white",
+                      }}>
+                    <Text display="flex"> {t("Learn")} <ArrowRight size={22} /></Text> 
+                    </Button>
+             </Box>
+
+              
+              <Box className="about4" w={'full'}  visibility={"hidden"} display="flex" flex="1"
+               position="relative" alignItems="center" px={3}>
+                
+                  <Image
+                  w={630}
+                    maxW={ "full" }
+                    src={ "/publ../../assets/about/Imagem1.png" }
+                    alt="some good alt text"
+                    objectFit="contain"/>
+            </Box>
+          </Flex>
+
+
+          {/* // Futer 2 */ }
+         <Flex bg={"white"} py={4} className="about5"
+            marginTop={ { base: "1", sm: "4" } } 
+            display="flex"
+            flexDirection={ { base: "column", sm: "row" } }
+            justify={"space-between"}>
+
+            <Box className="about4" w={'full'}  visibility={"hidden"} display="flex" flex="1"
+               position="relative" alignItems="center" px={3}>
+                  <Image
+                   w={630}
+                   maxW={ "full" }
+                    src={ `${"/publ../../assets/about/Imagem2.png"}` }
+                    alt="some good alt text"
+                    objectFit="contain"/>
+              
+         
+            </Box>
+
+            <Box 
+              className="about6" visibility={"hidden"} 
+              display="flex"  p={3}
               flex="1"
               flexDirection="column"
               justifyContent="center"
               marginTop={ { base: "3", sm: "0" } }>
               <Flex alignItems={ "center" } gap={ 2 }>
-                <BlogTags  tags={ ["Our vision"] } />
-                <Eye color={ "#1A202C" } size={ 32 } />
-              </Flex>
-              <Heading marginTop="1">
-                <Link   fontSize="md"
-                fontWeight={'bord'} textDecoration="none" _hover={ { textDecoration: "none" } }>
-                  {t("Founded1")}
-                </Link>
-              </Heading>
-              <Text
-                textAlign={ "justify" }
-                marginTop="2"
-                color={ useColorModeValue("gray.600", "gray.200") }
-                fontSize="sm"
-                fontWeight={'bord'}>
-                {t("Abaut1")}
-              </Text>
-              <Button
-                top={ 2 }
-                as={'a'}
-                bg="white"
-                fontSize="md"
-                border={ "1px solid #1A202C" }
-                textAlign={ "justify" }
-                w={250}
-                maxW={ "full" }
-                _hover={ {
-                  cursor:"pointer",
-                  bg: "red.900",
-                  color: "white",
-                }}>
-              <Text display="flex"> {t("Learn")} <ArrowRight size={22} /></Text> 
-              </Button>
-            </Box>
-
-                <Box className="about4" visibility={"hidden"} display="flex" flex="1" position="relative" alignItems="center">
-              <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2" 
-                  marginLeft={{base: "0", sm: "2%"}} marginTop="5%">
-                <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
-                  <Image
-                    maxW={ "full" }
-                    src={ "/publ../../assets/about/Imagem1.png" }
-                    alt="some good alt text"
-                    objectFit="contain"/>
-                </Link>
-              </Box>
-            </Box>
-          </Box>
-
-
-          {/* // Futer 2 */ }
-         <Box  bg={"white"} p={3}
-            marginTop={ { base: "1", sm: "8" } }
-            display="flex"
-            flexDirection={ { base: "column", sm: "row" } }
-            justifyContent="space-between"
-            className="about5" visibility={"hidden"}>
-
-            <Box display="flex" flex="1" position="relative" alignItems="center" h={500}>
-               <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} 
-               zIndex="2" marginLeft={{base: "0", sm: "2%"}} marginTop="2%">
-                <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
-                  <Image
-                    maxW={ "full" }
-                    src={ `${"/publ../../assets/about/Imagem2.png"}` }
-                    alt="some good alt text"
-                    objectFit="contain"/>
-                </Link>
-              </Box>
-            </Box>
-
-            <Box 
-              className="about6" visibility={"hidden"}
-              display="flex"  ml={2} 
-              flex="1"
-              flexDirection="column"
-              justifyContent="center"
-              marginTop={ { base: "3", sm: "0" } }>
-              <Flex alignItems={ "center" } gap={ 4 }>
                 <BlogTags tags={ ["Our operates"] } />
                 <Eye color={ "#1A202C" } size={ 32 } />
               </Flex>
@@ -288,14 +279,17 @@ function About() {
                 {t("About2")}
               </Text>
             </Box>
-          </Box>
+          </Flex>
 
           {/* // Futer 3 */ }
 
-          <Box bg={"white"} marginTop={ { base: "1", sm: "8" } }display="flex"
-            flexDirection={ { base: "column", sm: "row" } }>
+          <Flex bg={"white"} py={4} className="about5"
+            marginTop={ { base: "1", sm: "4" } } 
+            display="flex"
+            flexDirection={ { base: "column", sm: "row" } }
+            justify={"space-between"}>
               
-             <Box className="about7" visibility={"hidden"} h={500} p={2} 
+             <Box className="about7" visibility={"hidden"} p={2} 
               display="flex" mx={2} 
               flex="1"
               flexDirection="column"
@@ -321,27 +315,22 @@ function About() {
               </Text>
             </Box>
             
-            <Box pr={3} pl={3} mb={4}
-                  className="about8" visibility={"hidden"}
-                  display="flex" flex="1"  position="relative" alignItems="center">
-                  <Box width={{base: "100%", sm: "85%", md: "100%", lg: "100%"}} zIndex="2"
-                  marginLeft={{base: "0", sm: "2%"}} marginTop="5%">
-                <Link textDecoration="none" _hover={ { textDecoration: "none" } }>
+            <Box className="about8" w={'full'}  visibility={"hidden"} display="flex" flex="1"
+               position="relative" alignItems="center" px={3}>
                   <Image
+                    w={630}
                     maxW={ "full" }
                     src={ "../../assets/about/Imagem4.png" }
                     alt="some good alt text"
                     objectFit="contain"
                   />
-                </Link>
-              </Box>
-            
+     
             </Box>
-          </Box>
+          </Flex>
 
           
 
-        <VStack  h={'full'} mt={8} mb={14} p={6} bg={"blue.800"}  
+        <VStack  h={'full'} mt={4} mb={14} p={6} bg={"blue.800"}  
              spacing="2" alignItems="flex-start" className="about9" visibility={"hidden"}> 
             <Box mb={14}>
             <Flex gap={ 4 } fontWeight={'bold'} alignItems={ "center" }>
@@ -363,9 +352,11 @@ function About() {
             </Box>
         </VStack>
         
-        </Box>
+    
        </Box>
       </Box>
+
+
       <BackToTopButton />
 
       </Layout>

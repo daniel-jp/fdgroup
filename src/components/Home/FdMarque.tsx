@@ -1,5 +1,5 @@
 import { Box, chakra, Flex, Image, SimpleGrid } from '@chakra-ui/react';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -35,22 +35,22 @@ function FdMarque() {
 
   const {t} = useTranslation();
   return (
-
+ 
     <Flex 
       overflowY={"hidden"} overflowX={"hidden"}
-     
       flexDirection={"column"}
       w={"full"}
       justifyContent={"center"}
-    py={32}
+      py={32}
       px={{base: 2, sm: 12, md: 0}}
       bg={"white"}>
-
+  <SimpleLayout>
       <chakra.h1 className={'marq1'} visibility={'hidden'} textAlign={"center"} 
       fontSize={"4xl"} pt={10} pb={20}fontWeight={"bold"}  w={"full"}>
         {t("Maques")}
       </chakra.h1>
-      <SimpleLayout>
+   
+     
         <SimpleGrid overflowY={"hidden"} overflowX={"hidden"} 
         className={'marq2'} visibility={'hidden'} 
         justifyItems={"center"} columns={{base: 1, md: 5}} spacing={{base: 5, lg: 6}}>
@@ -59,8 +59,8 @@ function FdMarque() {
               <Image height={"full"} src={img.url} />
             </Box>
           ))}
-        </SimpleGrid>
-      </SimpleLayout>
+        </SimpleGrid>  
+     </SimpleLayout>
     </Flex>
   );
 }

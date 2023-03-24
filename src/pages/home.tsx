@@ -12,6 +12,7 @@ import Suport from '../components/Home/FdSuport';
 import Testimo from '../components/Home/FdTestimo';
 import SwiperCard from '../components/Home/SwiperCard';
 import NavBar from '../components/NavBar/NavBar';
+import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import SimpleLayout from '../layout/SimpleLayout';
 
 
@@ -31,6 +32,7 @@ export default function Home() {
         </Flex>
       </SimpleLayout>
       <Marque />
+      <WhatsAppButton/>
       <BackToTopButton />
       <Footer />
     </Box>

@@ -2,7 +2,6 @@ import {
   Box,
   chakra,
   Container,
-  Flex,
   IconButton,
   Image,
   Input,
@@ -14,10 +13,10 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import { EnvelopeSimple, Globe, LinkedinLogo, TwitterLogo } from 'phosphor-react';
-import { Check } from 'phosphor-react';
 import React, { ReactNode, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
+
 
 const sr = ScrollReveal();
 
@@ -105,8 +104,10 @@ function Footer() {
   const {t} = useTranslation();
   return (
     <>
+
       <Box bg={ useColorModeValue("gray.800", "white") } color={ useColorModeValue("gray.300", "gray.200") }>
-        <Container overflowY={"hidden"} overflowX={"hidden"} justifyContent={"center"} as={Stack} maxW={"6xl"} py={10} pb={-10} textAlign={"justify"}>
+        <Container overflowY={"hidden"} overflowX={"hidden"} justifyContent={"center"} as={Stack} 
+        maxW={"7xl"} py={10} pb={-10} textAlign={"justify"}>
 
           <SimpleGrid templateColumns={{sm: "1fr 1fr", md: "3fr 2fr 2fr 2fr"}} spacing={{base: 5, lg: 6}}>
             <Stack spacing={ 2 }>
@@ -257,6 +258,7 @@ function Footer() {
           </Box>
         </Box>
       </Box>
+    
     </>
   );
 }
