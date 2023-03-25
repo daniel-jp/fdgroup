@@ -77,7 +77,7 @@ function FdCarousel() {
     textAlign: 'center',
     boxSize: 'full', 
     color: 'white',
-    backgroundColor:'black',
+    backgroundColor:'gray.800',
     opacity: '0.7',
     textShadow: '0 0 20px 0',
     fontWeight: 'bold',
@@ -148,27 +148,27 @@ function FdCarousel() {
                 align={"center"}
                 p={"10"}>
                   
-          <Box sx={innerBoxStyles}  textAlign={'center'}>
-                <Heading  textTransform={'uppercase'} fontFamily={"'Inter', sans-serif"} fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} color="white">
+          <Box my={10} sx={innerBoxStyles}  textAlign={'center'} borderRadius={8}>
+                <Heading  textTransform={'uppercase'} fontFamily={"'Inter', sans-serif"} fontSize={[ 'md', 'lg', '5xl']} color="white">
                   {t(card.title)}
                 </Heading>
 
-                <Heading fontFamily={"'Inter', sans-serif"} fontWeight={'bold'} fontSize={{base: "1xl", sm: "2xl", md: "3xl"}} 
+                <Heading fontFamily={"'Inter', sans-serif"} fontWeight={'bold'} fontSize={['md', 'lg', '3xl']} 
                 color={"red.400"}>
                   {t(card.subTitle)}
                 </Heading>
 
-                <Text py={2}  fontSize={{base: "md", lg: "lg"}} color="white">
+                <Text py={2} px={2} fontSize={['sm', 'md', 'lg', 'xl']} color="white">
                   {t(card.text)}
                 </Text>
-         </Box>
+            </Box>
  
                 <Button
                   as={"a"}
                   href={`${card.href}`}
                   borderRadius={30} 
                   fontFamily="roboto"
-                
+                w={300}
                   maxW={'full'}
                   fontSize={18}  
                   color="white"
