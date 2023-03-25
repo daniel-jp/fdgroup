@@ -33,10 +33,10 @@ import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
+import Footer from '../components/Footer/Footer';
 import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
 import SimpleLayout from '../layout/SimpleLayout';
-import Footer from '../components/Footer/Footer';
 
 const sr = ScrollReveal();
 
@@ -159,13 +159,12 @@ const Contact: React.FC = () => {
 
 
     return (
-
-      <Box bg={"gray.200"} pt={10} mt={-10}>
+ <Box bg={"gray.200"} pt={10} mt={-10}>
 <Layout>
 
        
-<Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>           
-<Flex flex={1} align={'center'} justify={'center'}>
+<Stack  minH={'100vh'} direction={{ base: 'column', md: 'row' }}>           
+  <Flex px={2} flex={1} align={'center'} justify={'center'}>
         
         <Box  alignItems="flex-start"> 
           <VStack alignItems="center" maxW={"full"} bg={'red.800'} > 
@@ -222,7 +221,7 @@ const Contact: React.FC = () => {
   </Flex>
 
 
-<Flex flex={1} align={'center'} justify={'center'}>
+<Flex px={2} flex={1} align={'center'} justify={'center'}>
 
   <Stack spacing={2} w={'full'} maxW={'md'}>
           <form onSubmit={handleSubmit}>
