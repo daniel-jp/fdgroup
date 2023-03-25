@@ -35,6 +35,8 @@ import ScrollReveal from 'scrollreveal';
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import WhatsAppButton from '../components/WhatsApp/WhatsAppButton';
 import Layout from '../layout/Layout';
+import SimpleLayout from '../layout/SimpleLayout';
+import Footer from '../components/Footer/Footer';
 
 const sr = ScrollReveal();
 
@@ -157,9 +159,12 @@ const Contact: React.FC = () => {
 
 
     return (
+
+      <Box bg={"gray.200"} pt={10} mt={-10}>
 <Layout>
+
        
-<Stack minH={'100vh'}  p={2}   py={20} mt={-20} direction={{ base: 'column', md: 'row' }}>           
+<Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>           
 <Flex flex={1} align={'center'} justify={'center'}>
         
         <Box  alignItems="flex-start"> 
@@ -284,6 +289,7 @@ const Contact: React.FC = () => {
  <BackToTopButton />
 
 </Layout>
+</Box>
     );
 }
 

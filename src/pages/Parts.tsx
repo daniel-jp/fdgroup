@@ -61,7 +61,7 @@ function Parts() {
   const {t} = useTranslation();
 
   return ( 
-      <Box bg={"gray.200"}pt={10}>
+      <Box bg={"gray.200"} mt={-10}>
       <Layout>
 
         <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
@@ -69,7 +69,7 @@ function Parts() {
 
           <Flex className='part1' visibility={'hidden'} justify={'flex-end'} align={'center'}  px={6}>
 
-        <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
+        <Heading mt={ 6 } mb={ 2 }  fontSize={[ 'md', 'lg', 'xl']} >
             {t("headParts")}
         </Heading>
             <QrCode size={28} color='#C53030' />
@@ -78,7 +78,7 @@ function Parts() {
           </Flex>
 
           <Stack align={'center'} className='part2' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("Part0")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("Part0")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -94,7 +94,7 @@ function Parts() {
       </Box>
 
           <Stack align={'center'} className='part4' visibility={'hidden'}>
-            <Heading color={'gray.700'} fontSize={"2xl"}> {t("Part1")}</Heading>
+            <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} > {t("Part1")}</Heading>
             <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
               {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
             </Text>

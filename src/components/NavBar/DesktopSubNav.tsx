@@ -1,25 +1,19 @@
 import '@fontsource/raleway/700.css';
 
-import { ChevronDownIcon } from '@chakra-ui/icons';
+
 import {
   Box,
-  Button,
-  Collapse,
   Flex,
-  Heading,
   Icon,
-  Image,
   Menu,
   MenuButton,
-  MenuDivider,
-  MenuGroup,
   MenuItem,
   MenuList,
   Stack,
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { CaretCircleDoubleRight } from 'phosphor-react';
+import { CaretCircleDoubleRight, CaretDown } from 'phosphor-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -28,6 +22,8 @@ const DesktopSubNav = () => {
   const {t} = useTranslation()
   const {isOpen, onOpen} = useDisclosure();
 
+ 
+
   return (
     <>
 
@@ -35,7 +31,7 @@ const DesktopSubNav = () => {
       <Menu>
        
         <MenuButton>
-          <Text fontWeight={"bold"}> {t("home3")}<ChevronDownIcon /></Text>
+          <Text justifyContent={'space-between'} display={'flex'} fontWeight={"bold"}> {t("home2")} <CaretDown size={24} /> </Text>
         </MenuButton>
    
         <MenuList mb={4} w={{base: 280, sm:  375, md: 500}}  color={"gray.600"}  maxW={'full'}>

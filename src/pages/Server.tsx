@@ -97,20 +97,20 @@ function Server() {
   const serversProducts4 = ServerProductsServer4();
 
   return (  
-  <Box bg={"gray.200"} pt={10} >
+  <Box bg={"gray.200"} mt={-10} >
     <Layout>
 
     <Box pb={20} overflowY={'hidden'} overflowX={'hidden'} fontFamily={"'Inter', sans-serif"}>
           <Flex className='server1' visibility={'hidden'} justify={'flex-end'} align={'center'}  px={6}>
 
-        <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
+        <Heading mt={ 6 } mb={ 2 }  fontSize={[ 'md', 'lg', 'xl']} >
             {t("childrenLab0")}
         </Heading>
         <QrCode size={ 28 } color='#C53030' />
       </Flex>
 
           <Stack align={"center"} className='server2' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag0")}</Heading>
+          <Heading color={'gray.700'} fontSize={[ 'md', 'lg', 'xl']}>{t("serverpag0")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -126,7 +126,7 @@ function Server() {
       </Box>
 
           <Stack align={"center"} className='server4' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag1")}</Heading>
+          <Heading color={'gray.700'} fontSize={[ 'md', 'lg', 'xl']}>{t("serverpag1")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -145,7 +145,7 @@ function Server() {
 
 
           <Stack align={"center"} className='server6' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag2")}</Heading>
+          <Heading color={'gray.700'} fontSize={[ 'md', 'lg', 'xl']}>{t("serverpag2")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -161,7 +161,7 @@ function Server() {
 
 
           <Stack align={"center"} className='server8' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("serverpag3")}</Heading>
+          <Heading color={'gray.700'} fontSize={[ 'md', 'lg', 'xl']} >{t("serverpag3")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>

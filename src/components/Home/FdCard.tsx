@@ -68,9 +68,9 @@ function FdCard() {
   return (
 
 
-    <Box bg={useColorModeValue("white", "gray.700")} py={8}>
+    <Box pt={4} >
 
-      <Container overflowY={"hidden"} overflowX={"hidden"} alignItems={"center"} maxW={"6xl"}>
+      <Container bg={ "white"} py={8}  pb={8} overflowY={"hidden"} overflowX={"hidden"} alignItems={"center"} maxW={"7xl"}>
 
         <Stack className={'stack3'} visibility={'hidden'} textAlign={'center'}  align={"center"}>
           <Heading> {t("prodCard0")}</Heading>
@@ -79,14 +79,13 @@ function FdCard() {
           </Text>
         </Stack> 
 
-        <Stack mt={12} overflowY={"hidden"} overflowX={"hidden"}
+        <Stack   mt={12} overflowY={"hidden"} overflowX={"hidden"}
           w={"full"} className={'stack4'} visibility={'hidden'}
           gap={4}
           direction={{base: "column", md: "row"}}
           spacing={{base: 10, md: 2, lg: 2}}>
-
           {cards.map((card) => (
-            <CardProduct
+            <CardProduct 
               key={card.title}
               title={t(card?.title)}
               subtitle={card?.subtitle}

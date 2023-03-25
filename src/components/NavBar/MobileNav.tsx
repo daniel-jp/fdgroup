@@ -46,11 +46,9 @@ const MobileNav = () => {
               {t("home1")}
               </MobileNavItem>
               <MobileNavItem  href={"/products"}> 
-              {t("home2")}
+             <DesktopSubNav/>
               </MobileNavItem>
-              <MobileNavItem>  
-                <DesktopSubNav/>
-              </MobileNavItem>
+           
 
               <MobileNavItem  href={"/services"}> 
               {t("home4")}

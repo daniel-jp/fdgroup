@@ -80,14 +80,14 @@ function Others() {
 
 
   return (
-         <Box bg={"gray.200"} pt={10}>
+         <Box bg={"gray.200"} mt={-10}>
 
       <Layout>
         <Box pb={20} overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='other1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
-        <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
+        <Heading mt={ 6 } mb={ 2 }  fontSize={[ 'md', 'lg', 'xl']} >
             {t("headOther")}
         </Heading>
         <QrCode size={ 28 } color='#C53030' />
@@ -96,7 +96,7 @@ function Others() {
 
 
           <Stack align={'center'} className='other2' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("pOther0")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("pOther0")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -111,7 +111,7 @@ function Others() {
       </Box>
 
           <Stack align={'center'} className='other4' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}> {t("pOther1")} </Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} > {t("pOther1")} </Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -128,7 +128,7 @@ function Others() {
       </Box>
 
           <Stack align={'center'} className='other6' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}> {t("pOther2")} </Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']}> {t("pOther2")} </Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>

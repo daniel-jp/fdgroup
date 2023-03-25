@@ -112,34 +112,34 @@ function Services() {
 
 
 
-      <Box pb={ 20 }  bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
+      <Box pb={ 20 } pt={10} mt={10}  bg={"gray.200"} fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
 
       <SimpleLayout>
       
         <Box textAlign="center" h={314}  bg={ useColorModeValue('white', 'gray.900') }>
           <Flex boxShadow={ "8px 0px 0px" }
-            mt={ 32 }
+          mt={12}
             p={ 2 }
             h={ "70px" }
             w={260}
-              maxW={ "full" }
-            py={ 4 } bg={"red.800"}
+            maxW={ "full" }
+            bg={"red.800"}
             gap={ 4 }  justify={'end'}
             alignItems={ "center" }
             fontSize={ "2xl" }
             textAlign={ "end" }
             color={ "gray.800" }
             fontWeight={"bold"} className='service1' visibility={'hidden'}>
-            <Text color={"white"} textTransform={'uppercase'}>  {t("ServiceH1")}</Text>
+            <Text color={"white"}  textTransform={'uppercase'}>  {t("ServiceH1")}</Text>
             <LineSegments size={ 40 } color='#1A202C' />
           </Flex>
 
-          <Stack py={6} className='service2' visibility={'hidden'} align={'center'} mt={20}>
-            <Text  fontWeight={'bold'}>
+          <Stack className='service2' visibility={'hidden'} align={'center'} mt={10}>
+            <Text fontSize={'lg'} fontWeight={'bold'}>
             {t("ServiceH0")} 
           </Text>
-            <Text color={'gray.800'} textAlign={'center'}
-              fontWeight={500} w={{base: 350, sm: 300, md: 400, lg: 900}} >
+            <Text px={2}color={'gray.800'} textAlign={'center'}
+              fontWeight={500} fontSize={['sm', 'md', 'lg']}>
               {t("ServiText0")}
             </Text>
           </Stack>
@@ -155,22 +155,22 @@ function Services() {
               bg={ useColorModeValue('white', 'gray.900') }
               boxShadow={ '2xl' }
               rounded={ 'md' }
-              p={ 6 } 
+              p={ 3 } 
               overflow={ 'hidden' }>
               <Flex direction={ 'row' }align={ 'center'}>
                 <Avatar
                   src={ '../../assets/services/Imagem1.png' }/>
                   <Text pl={2}  fontWeight={600}> {t("name1")} </Text>
               </Flex>
-              <Stack>
+              <Stack pb={4}>
 
-                <Heading pt={ 3 }
+                <Heading pt={ 3 } 
                   color={ useColorModeValue('gray.600', 'white') }
-                  fontSize={ '2xl' } 
+                  fontSize={[ 'md', 'lg']}
                   fontFamily={ 'body' }>
                   {t("ServiceSubH0")}
                 </Heading>
-                <Text color={ 'gray.600' } textAlign={ 'justify' }>
+                <Text color={ 'gray.600'}   fontSize={['sm', 'md']}  textAlign={ 'justify' }>
                   {t("ServiText1")}
                 </Text>
               </Stack>
@@ -195,14 +195,12 @@ function Services() {
               bg={ useColorModeValue('white', 'gray.900') }
               boxShadow={ '2xl' }
               rounded={ 'md' }
-              p={ 6 }
+              p={3}
               overflow={ 'hidden' }>
 
               <Box
                 bg={'gray.100'}
                 h={'full'}
-              
-               
                 pos={ 'relative' }>
                 <Image w={ 'full' } h={ 'full' }
                   src={ '../../assets/services/instal2.webp' } 
@@ -212,15 +210,15 @@ function Services() {
 
                 <Heading pt={ 3 }
                   color={ useColorModeValue('gray.600', 'white') }
-                  fontSize={ '2xl' }
+                  fontSize={['md', 'lg']}
                   fontFamily={ 'body' }>
                   {t("ServiceSubH1")}
                 </Heading>
-                <Text color={ 'gray.600' } textAlign={ 'justify' }>
+                <Text color={ 'gray.600' }  fontSize={['sm', 'md']} textAlign={ 'justify' }>
                   {t("ServiText2")}                </Text>
               </Stack>
 
-              <Stack pt={ 20 } direction={ 'row' } spacing={ 4 } align={ 'center' }>
+              <Stack mt={ 6 } direction={ 'row' } spacing={ 4 } align={ 'center' }>
                 <Avatar
                   src={ '../../assets/services/Imagem2.png' }
 
@@ -241,7 +239,7 @@ function Services() {
               bg={ useColorModeValue('white', 'gray.900') }
               boxShadow={ '2xl' }
               rounded={ 'md' }
-              p={ 6 }
+              p={3}
               overflow={ 'hidden' }>
 
               <Stack mt={ 2 } direction={ 'row' } spacing={ 4 } align={ 'center' }>
@@ -257,11 +255,11 @@ function Services() {
 
                 <Heading pt={ 2 }
                   color={ useColorModeValue('gray.600', 'white') }
-                  fontSize={ '2xl' }
+                  fontSize={['md', 'lg']}
                   fontFamily={ 'body' }>
                   {t("ServiceSubH2")}
                 </Heading>
-                <Text color={ 'gray.600' } pb={ 8 } textAlign={ 'justify' }>
+                <Text color={ 'gray.600' }  fontSize={['sm', 'md']} pb={ 4 } textAlign={ 'justify' }>
                   {t("ServiText3")}
                 </Text>
               </Stack>
@@ -289,7 +287,7 @@ function Services() {
               bg={ useColorModeValue('white', 'gray.900') }
               boxShadow={ '2xl' }
               rounded={ 'md' }
-              p={ 6 }
+              p={ 3 }
               overflow={ 'hidden' }>
 
               <Box
@@ -306,11 +304,11 @@ function Services() {
 
                 <Heading pt={ 3 }
                   color={ useColorModeValue('gray.700', 'white') }
-                  fontSize={ '2xl' }
+                  fontSize={['md', 'lg']}
                   fontFamily={ 'body' } >
                   {t("ServiceSubH3")}
                 </Heading>
-                <Text color={'gray.600'} textAlign={ 'justify' }>
+                <Text color={'gray.600'} fontSize={['sm', 'md']} textAlign={ 'justify' }>
                   {t("ServiText4")}
                 </Text>
               </Stack>
@@ -357,7 +355,7 @@ function Services() {
 
 
 
-        <Container className='service8' visibility={'hidden'} maxW={'7xl'} zIndex={10} position={'relative'}>
+        <Container className='service8' visibility={'hidden'} maxW={'7xl'}  position={'relative'}>
           <Stack direction={ { base: 'column', lg: 'row' } }>
             <Stack
               flex={ 1 }
@@ -370,17 +368,18 @@ function Services() {
                   fontWeight={ 700 }
                   textTransform={ 'uppercase' }
                   mb={ 3 }
-                  fontSize={ 'xl' }
+                  fontSize={['sm', 'md', 'lg', 'xl']}
                   color={ 'gray.800' }>
                   {t("ServiceH2")}
                 </Text>
                 <Heading
                   color={ 'white' }
                   mb={ 5 }
-                  fontSize={ { base: '3xl', md: '5xl' } }>
+                  fontSize={['sm', 'md', 'lg', 'xl']}>
                   {t("ServiceH3")}
                 </Heading>
-                <Text className='service9' textAlign={'justify'} visibility={'hidden'} mr={2} fontSize={'xl'} color={'gray.400'}>
+                <Text className='service9' textAlign={'justify'} visibility={'hidden'} mr={2} 
+                fontSize={['sm', 'md', 'lg']} color={'gray.400'}>
                   {t("ServiText5")}
                 </Text>
               </Box>
@@ -390,12 +389,12 @@ function Services() {
                   <Box key={ stat.id }>
                     <Text
                       fontFamily={ 'heading' }
-                      fontSize={ '3xl' }
+                      fontSize={['sm', 'md', 'lg', 'xl']}
                       color={ 'white' }
                       mb={ 3 }>
                       { stat.title }
                     </Text>
-                    <Text fontSize={ 'xl' } color={ 'gray.400' }>
+                    <Text fontSize={['sm', 'md']} color={ 'gray.400' }>
                       { t(stat.subtitle)}
                     </Text>
                   </Box>

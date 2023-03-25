@@ -104,7 +104,7 @@ function Products() {
 
   return (
     <>
-     <Box bg={"gray.200"} pt={6}>
+     <Box bg={"gray.200"}  pt={10} mt={-10}>
     <Layout>
 
         <Box  fontFamily={"'Inter', sans-serif"} color={"gray.600"}
@@ -117,14 +117,13 @@ function Products() {
               w={300}              
               maxW={ "full" }
               bg={"red.800"}
-              gap={ 4 } 
-              alignItems={"end"}
+              gap={ 4 }  textAlign={ "end" }
               fontSize={ "2xl"} color={"gray.800"}
               fontWeight={ "bold" }
               boxShadow={"8px 0px"}
               visibility={"hidden"}>
 
-              <Text align={'center'} color={"white"} textTransform={'uppercase'}>
+              <Text color={"white"} textTransform={'uppercase'}>
                 {t("HeadProd0")}
               </Text>
             </Flex>

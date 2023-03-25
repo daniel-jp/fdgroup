@@ -63,22 +63,21 @@ function Audiovisuel() {
 
   return (
 
-     <Box bg={"gray.200"} pt={10}>
-    <Layout>
-
-        <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
+     <Box mt={-10} bg={"gray.200"}>
+      <Layout>
+        <Box pb={10}  overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='audioV1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
 
-        <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
+        <Heading mt={ 6 } mb={ 2 }  fontSize={[ 'md', 'lg', 'xl']} >
             {t("headAudiovisuel")}
         </Heading>
         <QrCode size={ 28 } color='#C53030' />
       </Flex>
 
           <Stack align={'center'} className='audioV2' visibility={'hidden'} >
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("audioVisuel0")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("audioVisuel0")}</Heading>
 
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
@@ -95,7 +94,7 @@ function Audiovisuel() {
       </Box>
 
           <Stack align={'center'} className='audioV4' visibility={'hidden'} >
-          <Heading color={'gray.700'} fontSize={"2xl"}> {t("audioVisuel1")} </Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} > {t("audioVisuel1")} </Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>

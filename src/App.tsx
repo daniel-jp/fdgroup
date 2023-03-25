@@ -1,27 +1,48 @@
-import { Switch } from '@chakra-ui/react';
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import FdSuport from './components/Home/FdSuport';
-import Navbar from './components/NavBar/NavBar';
 import About from './pages/About';
 import Audiovisuel from './pages/Audiovisuel';
 import Contact from './pages/Contact';
 import Devices from './pages/Devices';
-import Error from './pages/Error/error_404';
+
 import Home from './pages/home';
 import Others from './pages/Others';
 import Parts from './pages/Parts';
 import Products from './pages/Products';
 import Server from './pages/Server';
 import Services from './pages/Services';
-
-
-
+import React, { useState, useEffect } from 'react';
+import { Spinner,  Switch, Box, IconButton, Flex, Center, HStack } from '@chakra-ui/react';
+import GridLoader from "react-spinners/GridLoader";
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      // Simulate fetching data from an API with a delay of 3 seconds
+      await new Promise(resolve => setTimeout(resolve, 3000));
+      setIsLoading(false);
+    };
+    fetchData();
+  }, []);
+
   return (
-    <>
-    
+   
+   <Box bg={"gray.800"}>
+      {isLoading ? (
+        <Box  display="flex"
+        justifyContent="center"
+        alignItems="center"
+        height="100vh">
+
+        <GridLoader color="#dd1a78" 
+              loading={isLoading} size={12}
+              aria-label="Loading Spinner"
+              data-testid="loader" />
+                </Box>
+      ) : (
+      
+        <Box>
       <Router>
         <Routes>
           <Route  path="/" element={<Home/>} />
@@ -34,10 +55,13 @@ function App() {
           <Route  path="/products/other" element={<Others/>} /> 
           <Route  path="/services" element={<Services/>} />
           <Route  path="/contact" element={<Contact/>} />
-     </Routes>
+        </Routes>
       </Router>
+       
+        </Box>
+      )}
+    </Box>
  
-    </>
   );
 }
 

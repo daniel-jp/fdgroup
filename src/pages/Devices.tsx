@@ -88,12 +88,12 @@ function Devices() {
 
 
   return (
-      <Box bg={"gray.200"} pt={10}>
+      <Box bg={"gray.200"} mt={-10}>
       <Layout>
 
         <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
           <Flex className='device1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
-        <Heading mt={ 6 } mb={ 2 } fontSize={ { base: 18, sm: 20, md: 22, lg: 32 } }>
+        <Heading mt={ 6 } mb={ 2 } fontSize={[ 'md', 'lg', 'xl']} >
             {t("headDivic")}
         </Heading>
         <QrCode size={ 28 } color='#C53030' />
@@ -101,7 +101,7 @@ function Devices() {
 
 
           <Stack align={"center"} className='device2' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice0")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("Divice0")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -117,7 +117,7 @@ function Devices() {
       </Box>
 
           <Stack align={"center"} className='device4' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice1")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("Divice1")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -135,7 +135,7 @@ function Devices() {
 
 
           <Stack align={"center"} className='device6' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice2")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("Divice2")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>
@@ -152,7 +152,7 @@ function Devices() {
 
 
           <Stack align={"center"} className='device8' visibility={'hidden'}>
-          <Heading color={'gray.700'} fontSize={"2xl"}>{t("Divice3")}</Heading>
+          <Heading color={'gray.700'}  fontSize={[ 'md', 'lg', 'xl']} >{t("Divice3")}</Heading>
           <Text fontSize={"lg"} color={"purple.600"} alignItems={"center"} display={'flex'}>
             {/* {t("TextServ0")} <CameraSlash size={20} color='#2F855A' /> */}
         </Text>

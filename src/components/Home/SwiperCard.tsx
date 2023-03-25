@@ -68,14 +68,14 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   return (
     <Box p={3} bg={"white"}>
 
-      <Stack className='swp1' visibility={'hidden'} mb={6} align={"center"}>
+      <Stack pt={8} className='swp1' visibility={'hidden'} mb={6} align={"center"}>
         <Heading>{t("swip1")}</Heading>
         <Text> {t("swip2")} </Text>
       </Stack>
 
       <SimpleLayout>
 
-        <Box className='swp2' visibility={'hidden'} overflowY={"hidden"} overflowX={"hidden"}>
+        <Box py={4} className='swp2' visibility={'hidden'} overflowY={"hidden"} overflowX={"hidden"}>
          <Swiper 
     
          {...myStyle}
@@ -142,7 +142,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
     </SwiperSlide>
   ))}
 
-</Swiper>
+   </Swiper>
   </Box>
 </SimpleLayout>
 

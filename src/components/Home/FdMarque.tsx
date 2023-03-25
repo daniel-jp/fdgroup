@@ -39,19 +39,18 @@ function FdMarque() {
     <Flex 
       overflowY={"hidden"} overflowX={"hidden"}
       flexDirection={"column"}
-      w={"full"}
+      w={"full"} pb={20} pt={10}
       justifyContent={"center"}
-      py={32}
       px={{base: 2, sm: 12, md: 0}}
       bg={"white"}>
   <SimpleLayout>
       <chakra.h1 className={'marq1'} visibility={'hidden'} textAlign={"center"} 
-      fontSize={"4xl"} pt={10} pb={20}fontWeight={"bold"}  w={"full"}>
+      fontSize={"4xl"} pb={12}fontWeight={"bold"}  w={"full"}>
         {t("Maques")}
       </chakra.h1>
    
      
-        <SimpleGrid overflowY={"hidden"} overflowX={"hidden"} 
+        <SimpleGrid  overflowY={"hidden"} overflowX={"hidden"} 
         className={'marq2'} visibility={'hidden'} 
         justifyItems={"center"} columns={{base: 1, md: 5}} spacing={{base: 5, lg: 6}}>
           {marques.map((img, key) => (

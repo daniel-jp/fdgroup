@@ -15,8 +15,8 @@ function AudiovisuelProductCard({title, img}: any) {
         justifyContent={ 'center' }
         h={ { base: 50, sm: 70, md: 50, lg: 90 } } maxH={ 'full' }
           mt={4}
-        mx={ -6 }
-        mb={ 2 }>
+          mx={ -6 }
+          mb={ 2 }>
 
         <Image src={ `../../assets/audiov-visioconf/${img}` } />
       </Flex>

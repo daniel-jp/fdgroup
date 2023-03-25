@@ -146,7 +146,7 @@ function About() {
   const {t} = useTranslation();
 
   return (
-    <Box bg={"gray.200"} pt={6} >
+    <Box bg={"gray.200"} pt={10} mt={-10}>
       <Layout>
 
         <Box overflowY={"hidden"} overflowX={"hidden"}  fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
@@ -183,7 +183,7 @@ function About() {
             flexDirection={ { base: "column", sm: "row" } }
             justify={"space-between"}>
 
-             <Box mb={4} p={3} className={"about3"} visibility={"hidden"} 
+             <Box mb={8} p={3} className={"about3"} visibility={"hidden"} 
                     display="flex" flex="1" flexDirection="column"
                     justifyContent="center" marginTop={ { base: "3", sm: "0" } }>
                     <Flex alignItems={ "center" } gap={ 2 }>
@@ -205,7 +205,7 @@ function About() {
                       {t("Abaut1")}
                     </Text>
                     <Button
-                      top={ 2 }
+                      top={ 6 }
                       as={'a'}
                       bg="white"
                       fontSize="md"
