@@ -168,7 +168,7 @@ function FdCarousel() {
                   href={`${card.href}`}
                   borderRadius={30} 
                   fontFamily="roboto"
-                w={300}
+                  w={300}
                   maxW={'full'}
                   fontSize={18}  
                   color="white"

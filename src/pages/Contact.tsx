@@ -159,7 +159,7 @@ const Contact: React.FC = () => {
 
 
     return (
- <Box bg={"gray.200"} pt={10} mt={-10}>
+ <Box bg={"white"} pt={10} mt={-10}>
 <Layout>
 
        
