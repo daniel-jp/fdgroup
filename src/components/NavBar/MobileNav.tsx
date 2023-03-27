@@ -2,6 +2,7 @@ import '@fontsource/inter/';
 
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
+  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -27,7 +28,7 @@ const MobileNav = () => {
 
   const {t} = useTranslation();
   return (
-    <Flex  display={{base: "flex", md: "none"}} justifyContent="space-between" alignItems="center" px={4}>
+    <Flex display={{base: "flex", md: "none"}} justifyContent="space-between" alignItems="center" px={4}>
       <IconButton color={"gray.400"} icon={<HamburgerIcon boxSize={6} />} variant="ghost" onClick={onOpen} aria-label={''} />
       <RouteLink to="/">
            <FdgLogo/>
@@ -46,10 +47,9 @@ const MobileNav = () => {
               {t("home1")}
               </MobileNavItem>
               <MobileNavItem  href={"/products"}> 
-             <DesktopSubNav/>
+                  <DesktopSubNav/>
               </MobileNavItem>
            
-
               <MobileNavItem  href={"/services"}> 
               {t("home4")}
               </MobileNavItem>

@@ -64,7 +64,7 @@ function Parts() {
       <Box bg={"gray.200"} mt={-10}>
       <Layout>
 
-        <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='part1' visibility={'hidden'} justify={'flex-end'} align={'center'}  px={6}>
@@ -84,9 +84,9 @@ function Parts() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='part3' visibility={'hidden'}>
+          <Box pt={4} pb={10} className='part3' visibility={'hidden'}>
 
-            <SimpleGrid columns={{base: 1, md: 3}} spacing={5}>
+            <SimpleGrid columns={{base: 1, md: 3}} spacing={2}>
               {partProduct1.map((server, key) => (
                 <PartProductCard title={server.title} img={server.img} key={key} />
               ))}
@@ -100,8 +100,8 @@ function Parts() {
             </Text>
           </Stack>
 
-          <Box pt={10} pb={10} className='part5' visibility={'hidden'}>
-            <SimpleGrid columns={{base: 1, md: 3}} spacing={5}>
+          <Box pt={4} pb={10} className='part5' visibility={'hidden'}>
+            <SimpleGrid columns={{base: 1, md: 3}} spacing={2}>
               {partProduct2.map((server, key) => (
                 <PartProductCard title={server.title} img={server.img} key={key} />
               ))}

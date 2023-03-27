@@ -83,7 +83,7 @@ function Others() {
          <Box bg={"gray.200"} mt={-10}>
 
       <Layout>
-        <Box pb={20} overflowY={'hidden'} overflowX={'hidden'}>
+        <Box  overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='other1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
@@ -102,8 +102,8 @@ function Others() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='other3' visibility={'hidden'}>
-        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 5 }>
+          <Box pt={4} pb={10} className='other3' visibility={'hidden'}>
+        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 2 }>
           { otherProduct1.map((server, key) => (
             <OtherProductCard title={ server.title } img={ server.img } key={ key } />
           )) }
@@ -117,9 +117,9 @@ function Others() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='other5' visibility={'hidden'}>
+          <Box pt={4} pb={10} className='other5' visibility={'hidden'}>
 
-            <SimpleGrid columns={{base: 1, md: 3}} spacing={5} className='other1' visibility={'hidden'}>
+            <SimpleGrid columns={{base: 1, md: 3}} spacing={2} className='other1' visibility={'hidden'}>
           { otherProduct2.map((server, key) => (
             <OtherProductCard title={ server.title } img={ server.img } key={ key } />
           )) }
@@ -134,9 +134,9 @@ function Others() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='other7' visibility={'hidden'} >
+          <Box pt={4} pb={10} className='other7' visibility={'hidden'} >
 
-        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 5 }>
+        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 2 }>
           { otherProduct3.map((server, key) => (
             <OtherProductCard title={ server.title } img={ server.img } key={ key } />
           )) }

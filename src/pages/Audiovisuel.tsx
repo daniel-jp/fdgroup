@@ -65,7 +65,7 @@ function Audiovisuel() {
 
      <Box mt={-10} bg={"gray.200"}>
       <Layout>
-        <Box pb={10}  overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} overflowX={'hidden'}>
 
 
           <Flex className='audioV1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
@@ -84,9 +84,9 @@ function Audiovisuel() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='audioV3' visibility={'hidden'} >
+          <Box pt={4} pb={10} className='audioV3' visibility={'hidden'} >
 
-        <SimpleGrid columns={ { base: 1, md: 4 } } spacing={ 5 }>
+        <SimpleGrid columns={ { base: 1, md: 4 } } spacing={ 2 }>
           { audiovisuelProductCard1.map((server, key) => (
             <AudiovisuelProductCard title={ server.title } img={ server.img } key={ key } />
           )) }
@@ -100,9 +100,9 @@ function Audiovisuel() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='audioV5' visibility={'hidden'} >
+          <Box pt={4} pb={10} className='audioV5' visibility={'hidden'} >
 
-        <SimpleGrid columns={ { base: 1, md: 4 } } spacing={ 5 }>
+        <SimpleGrid columns={ { base: 1, md: 4 } } spacing={ 2 }>
           { audiovisuelProductCard2.map((server, key) => (
             <AudiovisuelProductCard title={ server.title } img={ server.img } key={ key } />
           )) }

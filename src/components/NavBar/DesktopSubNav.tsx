@@ -1,22 +1,11 @@
 import '@fontsource/raleway/700.css';
 
-
-import {
-  Box,
-  Flex,
-  Icon,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Stack,
-  Text,
-  useDisclosure,
-} from '@chakra-ui/react';
+import { Box, Flex, Icon, Menu, MenuButton, MenuItem, MenuList, Stack, Text, useDisclosure } from '@chakra-ui/react';
 import { CaretCircleDoubleRight, CaretDown } from 'phosphor-react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+
 
 const DesktopSubNav = () => {
   const {t} = useTranslation()
@@ -31,15 +20,19 @@ const DesktopSubNav = () => {
       <Menu>
        
         <MenuButton>
-          <Text justifyContent={'space-between'} display={'flex'} fontWeight={"bold"}> {t("home2")} <CaretDown size={24} /> </Text>
+          <Flex align={'center'}> <Text fontWeight={"bold"}>{t("home2")} </Text>
+          <CaretDown color='white' size={20}/> 
+          </Flex>
         </MenuButton>
    
-        <MenuList mb={4} w={{base: 280, sm:  375, md: 500}}  color={"gray.600"}  maxW={'full'}>
+        <MenuList mb={4} w={{base: 280, sm:  375, md: 500}}
+        
+        color={"gray.600"}  maxW={'full'}>
           <Text p={3} fontSize={'1xl'} fontWeight={'bold'} color={'red.800'} >{t("home2")} 
           </Text>
           <MenuItem _hover={{bg: "pink.50"}} fontSize={"sm"}>
             <Link to="/products/server" role={"group"}>
-              <Stack direction={"row"} align={"center"}>
+              <Stack direction={"row"} align={"center"} spacing={{base:0, md:30, lg:90}}>
                 <Box>
                   <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab0")}</Text>
                   <Text fontSize={'sm'}>{t("childrenSubLab0")}</Text>
@@ -56,7 +49,7 @@ const DesktopSubNav = () => {
           </MenuItem>
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/devices" role={"group"}>
-              <Stack direction={"row"} align={"center"}>
+              <Stack direction={"row"} align={'center'} spacing={{base:0, md:40, lg:210}} >
                 <Box>
                   <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab1")}</Text>
                   <Text fontSize={'sm'}>{t("childrenSubLab1")}</Text>
@@ -72,7 +65,7 @@ const DesktopSubNav = () => {
           </MenuItem>
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/parts" role={"group"}>
-              <Stack direction={"row"} align={"center"}>
+              <Stack direction={"row"} align={"center"} spacing={{base:0, md:30, lg:150}}>
                 <Box>
                   <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab2")}</Text>
                   <Text fontSize={'sm'}>{t("childrenSubLab2")}</Text>
@@ -90,7 +83,7 @@ const DesktopSubNav = () => {
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/audiovisuel" role={"group"}>
 
-              <Stack direction={"row"} align={"center"}>
+              <Stack direction={"row"} align={"center"} spacing={{base:0, md:40, lg:230}}>
                 <Box>
                   <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab3")}</Text>
                   <Text fontSize={'sm'}>{t("childrenSubLab3")}</Text>
@@ -107,7 +100,7 @@ const DesktopSubNav = () => {
             <Link to="/products/other"
               role={"group"}>
 
-              <Stack direction={"row"} align={"center"} >
+              <Stack direction={"row"} align={"center"} spacing={{base:0, md:40, lg:280}}>
                 <Box>
                   <Text fontWeight={'bold'} transition={"all .3s ease"} _groupHover={{color: "pink.400"}}>{t("childrenLab4")}</Text>
                   <Text fontSize={'sm'}>{t("childrenSubLab4")}</Text>

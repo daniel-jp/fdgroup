@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MobileNavItem = ({href, children}:any) => {
   return (
     <Link to={href}>
-      <Text>{children}</Text>
+      {children}
     </Link>
   );
 };

@@ -91,7 +91,7 @@ function Devices() {
       <Box bg={"gray.200"} mt={-10}>
       <Layout>
 
-        <Box pb={20}  overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} overflowX={'hidden'}>
           <Flex className='device1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
         <Heading mt={ 6 } mb={ 2 } fontSize={[ 'md', 'lg', 'xl']} >
             {t("headDivic")}
@@ -107,9 +107,9 @@ function Devices() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='device3' visibility={'hidden'}>
+          <Box pt={4} pb={10} className='device3' visibility={'hidden'}>
 
-        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 5 }>
+        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 2 }>
           { deviceProduct1.map((server, key) => (
             <DeviceCards title={ server.title } img={ server.img } key={ key } />
           )) }
@@ -123,9 +123,9 @@ function Devices() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='device5' visibility={'hidden'}>
+          <Box pt={4} pb={10} className='device5' visibility={'hidden'}>
 
-        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 5 }>
+        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 2 }>
           { deviceProduct2.map((server, key) => (
             <DeviceCards title={ server.title } img={ server.img } key={ key } />
           )) }
@@ -142,8 +142,8 @@ function Devices() {
       </Stack>
 
 
-          <Box pt={10} pb={10} className='device7' visibility={'hidden'}>
-        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 5 }>
+          <Box pt={4} pb={10} className='device7' visibility={'hidden'}>
+        <SimpleGrid columns={ { base: 1, md: 3 } } spacing={ 2 }>
           { deviceProduct3.map((server, key) => (
             <DeviceCards title={ server.title } img={ server.img } key={ key } />
           )) }
@@ -158,8 +158,8 @@ function Devices() {
         </Text>
       </Stack>
 
-          <Box pt={10} pb={10} className='device8' visibility={'hidden'}>
-        <SimpleGrid columns={ { base: 1, md: 2 } } spacing={ 5 }>
+          <Box pt={4} pb={10} className='device8' visibility={'hidden'}>
+        <SimpleGrid columns={ { base: 1, md: 2 } } spacing={ 2 }>
           { deviceProduct4.map((server, key) => (
             <DeviceCards title={ server.title } img={ server.img } key={ key } />
           )) }

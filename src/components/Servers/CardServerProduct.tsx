@@ -16,7 +16,7 @@ function CardServerProduct({title, img}: any) {
         justifyContent={ 'center' }
         h={ { base: 90, sm: 70, md: 50, lg: 90 } } maxH={ 'full' }
           mt={4}
-        mx={ -6 }
+        mx={ -3 }
         mb={ 2 }>
         <Image src={ `../../assets/serveurs/${img}` } />
       </Flex>
