@@ -29,11 +29,11 @@ export default function SwiperProduct() {
     },
     {
       id: 5,
-      image: "../../assets/others/Imagem1.png",
-      title: "UBIQUITI",
-      description: 'Ubiquiti Networks UniFi nanoHD',
+      image: "../../assets/others/Imagem7.png",
+      title: "Tapo C200",
+      description: 'TPLINK',
     },
-    {
+    { 
       id: 6,
       image: "../../assets/serveurs/sb-7.webp",
       title: "Power Edge Servers",
@@ -42,20 +42,20 @@ export default function SwiperProduct() {
 
     {
       id: 7,
-      image: "../../assets/equip-reseau/er-9.webp",
+      image: "../../assets/equip-reseau/er-9.png", 
       title: "IP Phone",
       description: 'CP-8841-K9 Cisco 8800 IP Phone',
     },
     {
       id: 8,
-      image: "../../assets/piec-detachees/pd-11.webp",
+      image: "../../assets/piec-detachees/pd-11.png",
       title: "CPU",
       description: '803308-B21-HP Apollo 4200 Gen9 E5-2640v3Kit',
     },
     {
       id: 9,
       image: "../../assets/audiov-visioconf/Imag3.png",
-      title: "APC",
+      title: "APC", 
       description: 'Back UPS Pro BR 650VA',
     },
 
