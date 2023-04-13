@@ -179,7 +179,7 @@ const Contact: React.FC = () => {
                       Angola
                       </Text>
                       <Text fontSize={'sm'}>
-                        Distrito Ingombota Rua Bartolomeu Dias Zona 4 Casa N 1 Luanda / Angola  
+                       Benfica Quifica Rua do BFA centro comercial 2 amores segundo andar, Luanda-Angola
                       </Text>
                       <Text color={"blue.700"} fontSize={'sm'}>
                       <Link> +244 931 901 243</Link>
