@@ -51,7 +51,7 @@ function App() {
         <Box>
                 <Router>
                   <Routes>
-                    <Route exact path="/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/products/server" element={<Server />} />
