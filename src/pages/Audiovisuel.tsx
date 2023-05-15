@@ -1,7 +1,7 @@
 import { CheckCircleIcon } from '@chakra-ui/icons';
 import { Box, Flex, Heading, Link, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CameraSlash, QrCode } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -17,6 +17,10 @@ const sr = ScrollReveal();
 
 function Audiovisuel() {
 
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
   useEffect(() => {
 
     sr.reveal('.audioV1', {
@@ -63,9 +67,10 @@ function Audiovisuel() {
 
   return (
 
-     <Box mt={-10} bg={"gray.200"}>
+    <Box mt={-10} bg={"gray.200"}>
+      <div ref={topRef} />
       <Layout>
-        <Box overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} pt={20} overflowX={'hidden'}>
 
 
           <Flex className='audioV1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>

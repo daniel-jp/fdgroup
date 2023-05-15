@@ -3,14 +3,13 @@
 export default function ServerProductsServer1() {
     const serverProducts = [
         {
-            img: "sb-1.png",
-            title: "HPE DL388 GEN9 Server"
+            title: "HPE DL388 GEN9 Server",
+            img: "sb-1.png"
 
         },
         {
+            title: "Dell Paweredge  R740 Server ",
             img: "sb-2.webp",
-            title: "Dell Paweredge  R740 Server "
-
         },
 
         {

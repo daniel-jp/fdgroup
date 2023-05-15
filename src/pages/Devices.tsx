@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CameraSlash, QrCode } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -16,6 +16,11 @@ import Layout from '../layout/Layout';
 const sr = ScrollReveal();
 
 function Devices() {
+  const topRef = useRef<HTMLDivElement>(null);
+
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
 
 
   useEffect(() => {
@@ -88,10 +93,11 @@ function Devices() {
 
 
   return (
-      <Box bg={"gray.200"} mt={-10}>
+    <Box bg={"gray.200"} mt={-10}>
+      <div ref={topRef} />
       <Layout>
 
-        <Box overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} pt={20} overflowX={'hidden'}>
           <Flex className='device1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>
         <Heading mt={ 6 } mb={ 2 } fontSize={[ 'md', 'lg', 'xl']} >
             {t("headDivic")}

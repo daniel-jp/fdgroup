@@ -2,7 +2,7 @@ import { CheckCircleIcon } from '@chakra-ui/icons';
 import { Flex, Link, SimpleGrid, Stack } from '@chakra-ui/react';
 import { Box, Heading, Text } from '@chakra-ui/react';
 import { CameraSlash, QrCode } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -22,6 +22,7 @@ import OtherProduct3 from '../Others/OtherProduct3';
 const sr = ScrollReveal();
 
 function Others() {
+
   useEffect(() => {
 
     sr.reveal('.other1', {
@@ -78,12 +79,17 @@ function Others() {
   const otherProduct3 = OtherProduct3();
   const {t} = useTranslation();
 
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  };
+
 
   return (
          <Box bg={"gray.200"} mt={-10}>
-
+      <div ref={topRef} />
       <Layout>
-        <Box  overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} pt={20} overflowX={'hidden'}>
 
 
           <Flex className='other1' visibility={'hidden'} justify={'flex-end'} align={'center'} px={6}>

@@ -5,6 +5,7 @@ import '@fontsource/righteous/400.css';
 import '@fontsource/roboto/700.css';
 
 import {
+  background,
   Box,
   Button,
   createIcon,
@@ -14,15 +15,15 @@ import {
   IconButton,
   IconProps,
   Image,
-  Link,
   Stack,
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { Divider } from '@chakra-ui/react';
 import { Eye } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import { useTranslation } from 'react-i18next';
+import {Link} from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
@@ -32,6 +33,10 @@ import Layout from '../layout/Layout';
 const sr = ScrollReveal();
 function Products() {
 
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
   useEffect(() => {
 
     sr.reveal('.product1', {
@@ -104,7 +109,8 @@ function Products() {
 
   return (
     <>
-     <Box bg={"gray.200"}  pt={10} mt={-10}>
+      <Box bg={"gray.200"} pt={10} mt={-10}>
+        <div ref={topRef} />
     <Layout>
 
         <Box  fontFamily={"'Inter', sans-serif"} color={"gray.600"}
@@ -128,11 +134,9 @@ function Products() {
               </Text>
             </Flex>
 
-        </Box>
-      <Divider />
+            </Box>
 
-
-
+            <Divider />
 
       {/*   PROD 1 */ }
 
@@ -158,10 +162,7 @@ function Products() {
                       }}>
                     {t("HeadProd1")}
               </Text>
-            <br />
-                {/* <Text as={"span"} fontSize={'md'} color={"red.600"}>
-                  {t("SubHead0")}
-            </Text> */}
+                  <br />
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd0")}
@@ -169,17 +170,14 @@ function Products() {
           <Stack spacing={ { base: 4, sm: 6 } } direction={ { base: "column", sm: "row" } }>
 
 
-            <Button
-              as={ 'a' }
-              href={ `/products/servers` }
-              size={ "lg" } color={'white'}
-              fontWeight={600}
-              px={ 6 }
-              bg={ "gray.600" }
-                  _hover={{bg: "red.500"}}>
+                  <Link to={`/products/server`}
+                    style={{alignItems: "center", color: "#F7FAFC"}}
+                    className="btn btn-dark
+                  bg-red p-2  px-2 d-flex
+                    justify-content-center">
               <Eye size={ 32 } />
                   <span style={{marginLeft: "4px"}}>{t("btnProduct")}</span>
-            </Button>
+                  </Link>
 
           </Stack>
         </Stack>
@@ -271,27 +269,22 @@ function Products() {
                   {t("HeadProd2")}
 
             </Text>
-            <br />
-                {/* <Text  fontSize={'md'} color={"red.600"}>
-                  {t("SubHead0")}
-            </Text> */}
-          </Heading>
+                  <br />
+
+                </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd1")}
-          </Text>
-          <Stack spacing={ { base: 4, sm: 6 } } direction={ { base: "column", sm: "row" } }>
-            <Button
+                </Text>
+                <Stack spacing={{base: 4, sm: 6}} direction={{base: "column", sm: "row"}}>
 
-              as={ 'a' }
-              href={ `/products/devices` }
-              size={ "lg" }
-              fontWeight={600}
-              px={ 6 }
-              colorScheme={ "red" }
-              bg={ "gray.600" }
-              _hover={ { bg: "red.500" } }>
-                  <Eye size={32} />  <span style={{marginLeft: "4px"}}>{t("btnProduct")}</span>
-            </Button>
+                  <Link to={"/products/devices"}
+                    style={{alignItems: "center", color: "#F7FAFC"}}
+                    className="btn btn-dark
+                     bg-red p-2  px-2 d-flex
+                    justify-content-center">
+                    <Eye size={32} />
+                    <span style={{marginLeft: "4px"}}>{t("btnProduct")}</span>
+                  </Link>
           </Stack>
         </Stack>
       </Stack>
@@ -321,28 +314,20 @@ function Products() {
                   {t("HeadProd3")}
 
             </Text>
-            <br />
-                {/* <Text fontSize={'md'} color={"red.600"}>
-                  {t("SubHead0")}
-            </Text> */}
+                  <br />
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd2")}
           </Text>
           <Stack spacing={ { base: 4, sm: 6 } } direction={ { base: "column", sm: "row" } }>
-            <Button
-
-              as={ 'a' }
-              href={ `/products/parts` }
-             
-              size={ "lg" }
-              fontWeight={600}
-              px={ 6 }
-              colorScheme={ "white" }
-              bg={ "gray.600" }
-                  _hover={{bg: "red.500"}}>
+                  <Link
+                    to={`/products/parts`}
+                    style={{alignItems: "center", color: "#F7FAFC"}}
+                    className="btn btn-dark
+                     bg-red p-2  px-2 d-flex
+                    justify-content-center">
                   <Eye size={32} />  <span style={{marginLeft: "4px"}}>{t("btnProduct")}</span>
-            </Button>
+                  </Link>
           </Stack>
         </Stack>
 
@@ -434,28 +419,21 @@ function Products() {
                   {t("HeadProd4")}
 
             </Text>
-            <br />
-                {/* <Text fontSize={'md'} color={"red.600"}>
-                  {t("SubHead0")}
-            </Text> */}
+                  <br />
+
           </Heading>
               <Text color={"gray.600"}>
                 {t("TextProd3")}
           </Text>
           <Stack spacing={ { base: 4, sm: 6 } } direction={ { base: "column", sm: "row" } }>
-            <Button
-
-              as={ 'a' }
-              href={ `/products/audiovisuel` }
-             
-              size={ "lg" }
-                  fontWeight={600}
-                  px={6} 
-              colorScheme={ "red" }
-              bg={ "gray.600" }
-                  _hover={{bg: "red.500"}}>
+                  <Link
+                    to={`/products/audiovisuel`}
+                    style={{alignItems: "center", color: "#F7FAFC"}}
+                    className="btn btn-dark
+                     bg-red p-2  px-2 d-flex
+                    justify-content-center">
                   <Eye size={32} />   <span style={{marginLeft: "4px"}}>{t("btnProduct")}</span>
-            </Button>
+                  </Link>
           </Stack>
         </Stack>
 

@@ -28,7 +28,7 @@ import {
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
 import { EnvelopeSimple, Globe, LinkedinLogo, MapPinLine, Phone, TwitterLogo } from 'phosphor-react';
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -157,9 +157,15 @@ const Contact: React.FC = () => {
     return errors
   };
 
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
+
 
     return (
  <Box bg={"white"} pt={10} mt={-10}>
+        <div ref={topRef} />
 <Layout>
 
        

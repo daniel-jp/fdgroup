@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CameraSlash, QrCode } from 'phosphor-react';
-import React, { useEffect } from 'react';
+import React, {useEffect, useRef} from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 
@@ -60,11 +60,18 @@ function Parts() {
   const partProduct2 = PartProduct2();
   const {t} = useTranslation();
 
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  };
+
   return ( 
-      <Box bg={"gray.200"} mt={-10}>
+    <Box bg={"gray.200"} mt={-10}>
+
+      <div ref={topRef} />
       <Layout>
 
-        <Box overflowY={'hidden'} overflowX={'hidden'}>
+        <Box overflowY={'hidden'} pt={20} overflowX={'hidden'}>
 
 
           <Flex className='part1' visibility={'hidden'} justify={'flex-end'} align={'center'}  px={6}>

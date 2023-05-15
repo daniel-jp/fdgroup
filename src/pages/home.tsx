@@ -1,7 +1,7 @@
 import '@fontsource/inter/600.css';
 
 import { Box, Flex } from '@chakra-ui/react';
-import { useState } from 'react';
+import {useRef, useState} from 'react';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Footer from '../components/Footer/Footer';
@@ -17,9 +17,14 @@ import SimpleLayout from '../layout/SimpleLayout';
 
 
 export default function Home() {
+
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
   return (
     <Box as="main" margin="0" padding="0" bg={"gray.100"} overflowY={"hidden"} overflowX={"hidden"} >
-
+      <div ref={topRef} />
       <NavBar />
       <FdCarousel />
       <SimpleLayout>

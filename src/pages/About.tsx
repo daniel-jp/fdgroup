@@ -75,6 +75,10 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 let sr = ScrollReveal();
 function About() {
 
+  const topRef = useRef<HTMLDivElement>(null);
+  if(topRef.current) {
+    topRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
 
 
   useEffect(() => {
@@ -147,6 +151,7 @@ function About() {
 
   return (
     <Box bg={"gray.200"} pt={10} mt={-10}>
+      <div ref={topRef} />
       <Layout>
 
         <Box overflowY={"hidden"} overflowX={"hidden"}  fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
@@ -163,11 +168,10 @@ function About() {
               alignItems={ "center" }
               fontSize={ "2xl" } color={"gray.800"}
               fontWeight={ "bold" }
-              boxShadow={"8px 0px"}
-              className="about1" visibility={"hidden"}>
+              boxShadow={"8px 0px"}>
       <Text color={"white"}  m={4} textTransform={'uppercase'}> {t("heaAboutUs")} </Text> 
       </Flex>
-        <Stack px={2} className={"about2"} align={'center'}   visibility={"hidden"} mt={10} >
+            <Stack align={'center'} mt={10} >
               <Text display={'flex'} fontWeight={'bold'}>{t("WhoWe")}  <CircleWavyQuestion size={ 20 } /></Text>
               <Text  textAlign={'center'}  fontSize="md" color={"gray.800"}
                 fontWeight={'bord'}>{t("QualityText")}</Text>
@@ -183,7 +187,7 @@ function About() {
             flexDirection={ { base: "column", sm: "row" } }
             justify={"space-between"}>
 
-             <Box mb={8} p={3} className={"about3"} visibility={"hidden"} 
+              <Box mb={8} p={3} className="about4" visibility={"hidden"} 
                     display="flex" flex="1" flexDirection="column"
                     justifyContent="center" marginTop={ { base: "3", sm: "0" } }>
                     <Flex alignItems={ "center" } gap={ 2 }>

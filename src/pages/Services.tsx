@@ -129,12 +129,12 @@ function Services() {
             fontSize={ "2xl" }
             textAlign={ "end" }
             color={ "gray.800" }
-            fontWeight={"bold"} className='service1' visibility={'hidden'}>
+              fontWeight={"bold"}>
             <Text color={"white"}  textTransform={'uppercase'}>  {t("ServiceH1")}</Text>
             <LineSegments size={ 40 } color='#1A202C' />
           </Flex>
 
-          <Stack className='service2' visibility={'hidden'} align={'center'} mt={10}>
+            <Stack align={'center'} mt={10}>
             <Text fontSize={'lg'} fontWeight={'bold'}>
             {t("ServiceH0")} 
           </Text>
