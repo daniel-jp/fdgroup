@@ -50,9 +50,8 @@ function App() {
       
         <Box>
                 <Router>
-
-        <Routes>
-                    <Route exact path="/" element={<Home />} />
+                  <Routes>
+                    <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/products/server" element={<Server />} />
@@ -63,7 +62,7 @@ function App() {
                     <Route path="/services" element={<Services />} />
                     <Route path="/contact" element={<Contact />} />
                   </Routes>
-      </Router>
+                </Router>
        
         </Box>
       )}
