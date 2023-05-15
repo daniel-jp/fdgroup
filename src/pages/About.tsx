@@ -13,7 +13,7 @@ import {
   HStack,
   Icon,
   Image,
-  Link,
+
   SpaceProps,
   Stack,
   Text,
@@ -25,6 +25,7 @@ import { ArrowRight, CheckCircle, CircleWavyQuestion, Eye } from 'phosphor-react
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
+import {Link} from 'react-router-dom';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Logo from '../components/fdgLogo';
@@ -195,10 +196,10 @@ function About() {
                       <Eye color={ "#1A202C" } size={ 32 } />
                     </Flex>
                     <Heading marginTop="1">
-                      <Link   fontSize="md"
-                      fontWeight={'bord'} textDecoration="none" _hover={ { textDecoration: "none" } }>
-                        {t("Founded1")}
-                      </Link>
+
+                  <Text fontSize="md"
+                    fontWeight={'bord'} textDecoration="none"> {t("Founded1")}</Text>
+
                     </Heading>
                     <Text
                       textAlign={ "justify" }
@@ -208,22 +209,16 @@ function About() {
                       fontWeight={'bord'}>
                       {t("Abaut1")}
                     </Text>
-                    <Button
-                      top={ 6 }
-                      as={'a'}
-                      bg="white"
-                      fontSize="md"
-                      border={ "1px solid #1A202C" }
-                      textAlign={ "justify" }
-                      w={250}
-                      maxW={ "full" }
-                      _hover={ {
-                        cursor:"pointer",
-                        bg: "red.900",
-                        color: "white",
-                      }}>
-                    <Text display="flex"> {t("Learn")} <ArrowRight size={22} /></Text> 
-                    </Button>
+
+
+                <Link to={`https://www.linkedin.com/company/fd-group-sarl/`}
+                  style={{
+                    alignItems: "center", color: "#F7FAFC",
+                    width: "250px", maxWidth: "100%", target: "_blank"
+                  }}
+                  className="btn btn-dark bg-red mt-4 p-2  px-2 d-flex justify-content-center">
+                  <Text display="flex"> {t("Learn")} <ArrowRight size={22} /></Text> 
+                </Link>
              </Box>
 
               

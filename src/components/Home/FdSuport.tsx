@@ -134,24 +134,20 @@ function FdSuport() {
               w={"full"}>
 
               <TestimonialAvatar
-                src={ "../../assets/Suport/Imagem1.png" }
+                src={`../../assets/Suport/Imagem1.png`}
                 name={t("name1")} /> 
             </Text> 
           </Testimonial>
-        
-
-         
 
           <Testimonial>  
            
             <Text  _hover={{ cursor: "pointer", color: "gray.400", transform: "scale(1.1)"
               }}>
               <TestimonialAvatar
-                src={ "../../assets/Suport/sp-2.webp" }
+                src={`../../assets/Suport/sp-2.webp`}
                 name={t("name2")}/>
             </Text>   
           </Testimonial>
-  
 
           <Testimonial>
          
@@ -161,7 +157,7 @@ function FdSuport() {
                 transform: "scale(1.1)",
               }} >
               <TestimonialAvatar
-                src={ "../../assets/Suport/sp-3.webp" }
+                src={`../../assets/Suport/sp-3.webp`}
                 name={t("name3")}/>
             </Text>
             
@@ -174,7 +170,7 @@ function FdSuport() {
             <Text _hover={{cursor: "pointer", color: "gray.400", transform: "scale(1.1)"}}>
 
               <TestimonialAvatar
-                src={ "../../assets/Suport/sp-4.webp" }
+                src={`../../assets/Suport/sp-4.webp`}
                 name={t("name4")}/>
             </Text>  
           

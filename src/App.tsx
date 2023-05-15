@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       // Simulate fetching data from an API with a delay of 3 seconds
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 3200));
       setIsLoading(false);
     };
     fetchData();
@@ -51,7 +51,7 @@ function App() {
         <Box>
                 <Router>
                   <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route exact path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/products/server" element={<Server />} />
