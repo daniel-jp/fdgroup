@@ -7,8 +7,6 @@ import '@fontsource/roboto/700.css';
 import {
   background,
   Box,
-  Button,
-  createIcon,
   Flex,
   Heading,
   Icon,

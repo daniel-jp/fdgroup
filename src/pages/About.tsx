@@ -21,7 +21,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { Tag } from '@chakra-ui/tag';
-import { ArrowRight, CheckCircle, CircleWavyQuestion, Eye } from 'phosphor-react';
+import {ArrowRight, CheckCircle, CircleWavyQuestion, Eye, LinkedinLogo} from 'phosphor-react';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
@@ -211,13 +211,13 @@ function About() {
                     </Text>
 
 
-                <Link to={`https://www.linkedin.com/company/fd-group-sarl/`}
+                <Link to={`https://www.linkedin.com/company/fd-group-sarl/about/`}
                   style={{
                     alignItems: "center", color: "#F7FAFC",
-                    width: "250px", maxWidth: "100%", target: "_blank"
+                    width: "250px", maxWidth: "100%"
                   }}
-                  className="btn btn-dark bg-red mt-4 p-2  px-2 d-flex justify-content-center">
-                  <Text display="flex"> {t("Learn")} <ArrowRight size={22} /></Text> 
+                  className="btn btn-dark bg-red mt-4 p-4  px-2 d-flex justify-content-center">
+                  <Text display="flex" pr={4}> {t("Learn")}</Text>   <LinkedinLogo size={22} /> 
                 </Link>
              </Box>
 
