@@ -196,10 +196,7 @@ function About() {
                       <Eye color={ "#1A202C" } size={ 32 } />
                     </Flex>
                     <Heading marginTop="1">
-
-                  <Text fontSize="md"
-                    fontWeight={'bord'} textDecoration="none"> {t("Founded1")}</Text>
-
+                  <Text fontSize="2xl" fontWeight={'bord'} textDecoration="none"> {t("Founded1")}</Text>
                     </Heading>
                     <Text
                       textAlign={ "justify" }
@@ -212,10 +209,7 @@ function About() {
 
 
                 <Link to={`https://www.linkedin.com/company/fd-group-sarl/about/`}
-                  style={{
-                    alignItems: "center", color: "#F7FAFC",
-                    width: "250px", maxWidth: "100%"
-                  }}
+                  style={{alignItems: "center", color: "#F7FAFC", width: "250px", maxWidth: "100%"}}
                   className="btn btn-dark bg-red mt-4 p-4  px-2 d-flex justify-content-center">
                   <Text display="flex" pr={4}> {t("Learn")}</Text>   <LinkedinLogo size={22} /> 
                 </Link>
@@ -266,10 +260,10 @@ function About() {
                 <Eye color={ "#1A202C" } size={ 32 } />
               </Flex>
               <Heading marginTop="1">
-                <Link  fontSize="md"
+                  <Text fontSize="2xl"
                 fontWeight={'bord'} textDecoration="none" _hover={ { textDecoration: "none" } }>
                   {t("FDGroup1")}
-                </Link>
+                  </Text>
               </Heading>
               <Text
               fontSize="sm"
@@ -301,9 +295,9 @@ function About() {
                 <Eye color={ "#1A202C" } size={ 32 } />
               </Flex>
               <Heading marginTop="1">
-                <Link fontSize={ "sm" } fontWeight={'bold'} textDecoration="none" _hover={ { textDecoration: "none" } }>
+                  <Text fontSize={"2xl"} fontWeight={'bold'} textDecoration="none" _hover={{textDecoration: "none"}}>
                   {t("Mission")}
-                </Link>
+                  </Text>
               </Heading>
               <Text
               
