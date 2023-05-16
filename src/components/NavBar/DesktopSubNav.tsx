@@ -1,6 +1,6 @@
 import '@fontsource/raleway/700.css';
 
-import {Box, Flex, Icon, Menu, Link, MenuButton, MenuItem, MenuList, Stack, Text, useDisclosure} from '@chakra-ui/react';
+import {Box, Flex, Icon, Link, Menu, MenuButton, MenuItem, MenuList, Stack, Text, useDisclosure} from '@chakra-ui/react';
 import { CaretCircleDoubleRight, CaretDown } from 'phosphor-react';
 import React, {useEffect, useState} from 'react';
 import { useTranslation } from 'react-i18next';
@@ -36,7 +36,7 @@ const DesktopSubNav = () => {
           </Text>
           <MenuItem _hover={{bg: "pink.50"}} fontSize={"sm"}>
             <Link to="/products/server" _activeLink={{color: "red.900"}} as={RouteLink}
-              onClick={() => setActiveLink("/server")} color={"gray.400"}
+              onClick={() => setActiveLink("/server")} color={"gray.600"}
               _hover={{textDecoration: "none", color: "red.600"}} role={"group"}>
 
               <Stack direction={"row"} align={"center"} spacing={{base:0, md:30, lg:90}}>
@@ -56,7 +56,7 @@ const DesktopSubNav = () => {
           </MenuItem>
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/devices" _activeLink={{color: "red.900"}} as={RouteLink}
-              onClick={() => setActiveLink("/devices")} color={"gray.400"}
+              onClick={() => setActiveLink("/devices")} color={"gray.600"}
               _hover={{textDecoration: "none", color: "red.600"}} role={"group"}>
               <Stack direction={"row"} align={'center'} spacing={{base:0, md:40, lg:210}} >
                 <Box>
@@ -74,7 +74,7 @@ const DesktopSubNav = () => {
           </MenuItem>
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/parts" _activeLink={{color: "red.900"}} as={RouteLink}
-              onClick={() => setActiveLink("/parts")} color={"gray.400"}
+              onClick={() => setActiveLink("/parts")} color={"gray.600"}
               _hover={{textDecoration: "none", color: "red.600"}} role={"group"}>
               <Stack direction={"row"} align={"center"} spacing={{base:0, md:30, lg:150}}>
                 <Box>
@@ -93,7 +93,7 @@ const DesktopSubNav = () => {
 
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/audiovisuel" _activeLink={{color: "red.900"}} as={RouteLink}
-              onClick={() => setActiveLink("/audiovisuel")} color={"gray.400"}
+              onClick={() => setActiveLink("/audiovisuel")} color={"gray.600"}
               _hover={{textDecoration: "none", color: "red.600"}} role={"group"}>
 
               <Stack direction={"row"} align={"center"} spacing={{base:0, md:40, lg:230}}>
@@ -111,7 +111,7 @@ const DesktopSubNav = () => {
           </MenuItem>
           <MenuItem _hover={{bg: "pink.50"}}>
             <Link to="/products/other" _activeLink={{color: "red.900"}} as={RouteLink}
-              onClick={() => setActiveLink("/other")} color={"gray.400"}
+              onClick={() => setActiveLink("/other")} color={"gray.600"}
               _hover={{textDecoration: "none", color: "red.600"}}
               role={"group"}>
 
