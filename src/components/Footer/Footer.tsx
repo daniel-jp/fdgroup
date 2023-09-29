@@ -147,7 +147,7 @@ function Footer() {
                   info@fdgroup.company
                 </Text>
                 <Text pb={ "2px" } textAlign={ "justify" } fontSize={ "sm" }>
-                +212 772 276 887
+                  +212 616-344655
                 </Text>
               </Box>
 

@@ -203,7 +203,7 @@ const Contact: React.FC = () => {
                          10 rue liberté Etg 3 Apt 5 CA Al Hiba, Casablanca
                       </Text>
                       <Text fontSize={'sm'}>
-                     <Link color={"blue.700"} >+212 772 276 887</Link> 
+                      <Link color={"blue.700"} >+212 616-344655</Link> 
 
                       </Text>
                       <Text color={"blue.700"} >

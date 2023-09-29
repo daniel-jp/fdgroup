@@ -12,17 +12,6 @@ import Server from './pages/Server';
 import Services from './pages/Services';
 
 
-
-// interface routs {
-//   path: string | null,
-//   name?: string | null,
-//   subLabel?: string | null,
-//   element?: JSX.Element | null,
-//   errorElement?: JSX.Element | null,
-//   children?: routs[] | null,
-// }
-
-
 export const routes = [
   {
 
@@ -35,7 +24,7 @@ export const routes = [
   },
   {
 
-    path: "/about",  
+    path: "/about",
     element: <About />,
     errorElement: <Error />,
   },

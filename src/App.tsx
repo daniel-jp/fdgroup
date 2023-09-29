@@ -12,43 +12,35 @@ function App() {
 
   const wait = (time: number) => new Promise(resolve => setTimeout(resolve, time));
   useEffect(() => {
-    // Aguarde 100ms antes de definir isLoading como false após o primeiro carregamento
     wait(1000).then(() => setIsLoading(false));
   }, []);
+
   const PAGES = {
     HOME: lazy(() => {
-
       return wait(1000).then(() => import('./pages/home')).finally(() => setIsLoading(false));
     }),
     ABOUT: lazy(() => {
-
       return wait(1000).then(() => import('./pages/About')).finally(() => setIsLoading(false));
     }),
     PRODUCT: lazy(() => {
-
       return wait(1000).then(() => import('./pages/Products')).finally(() => setIsLoading(false));
     }),
     DEVICE: lazy(() => {
-
       return wait(1000).then(() => import('./pages/Devices')).finally(() => setIsLoading(false));
     }),
     SERVER: lazy(() => {
-
       return wait(1000).then(() => import('./pages/Server')).finally(() => setIsLoading(false));
     }),
     PART: lazy(() => {
-
       return wait(1000).then(() => import('./pages/Parts')).finally(() => setIsLoading(false));
     }),
     AUDIV: lazy(() => {
-
       return wait(1000).then(() => import('./pages/Audiovisuel')).finally(() => setIsLoading(false));
     }),
     OTHER: lazy(() => {
       return wait(1000).then(() => import('./pages/Others')).finally(() => setIsLoading(false));
     }),
     SERVICE: lazy(() => {
-
       return wait(1000).then(() => import('./pages/Services')).finally(() => setIsLoading(false));
     }),
     CONTACT: lazy(() => {
@@ -62,7 +54,7 @@ function App() {
 
     <div className='App'>
       <Box bg={"gray.800"}>
-        <Suspense fallback={<div style={{justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', fontSize: '24px'}}>Loading...</div>}>
+        <Suspense fallback={<div style={{justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', fontSize: '16px'}}>Loading...</div>}>
           {isLoading ? (
             <Box display="flex"
               justifyContent="center"
