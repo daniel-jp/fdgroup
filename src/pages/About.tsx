@@ -13,7 +13,6 @@ import {
   HStack,
   Icon,
   Image,
-
   SpaceProps,
   Stack,
   Text,
@@ -24,8 +23,8 @@ import { Tag } from '@chakra-ui/tag';
 import {ArrowRight, CheckCircle, CircleWavyQuestion, Eye, LinkedinLogo} from 'phosphor-react';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import ScrollReveal from 'scrollreveal';
 import {Link} from 'react-router-dom';
+import ScrollReveal from 'scrollreveal';
 
 import BackToTopButton from '../components/BackToTopButton/BackToTopButton';
 import Logo from '../components/fdgLogo';
@@ -156,13 +155,12 @@ function About() {
       <Layout>
 
         <Box overflowY={"hidden"} overflowX={"hidden"}  fontFamily={"'Inter', sans-serif"} color={"gray.600"}>
-       
+
         <Box textAlign="center" h={"full"} pb={4} bg={ useColorModeValue('white', 'gray.900') }>
 
-          <Flex 
-         
-              h={ "70px" } 
-              w={260}              
+            <Flex
+              h={"70px"}
+              w={260}
               maxW={ "full" }
               bg={"red.800"}
              justify={'end'}

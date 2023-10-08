@@ -27,7 +27,6 @@ const languageOptions = [
         value: "fr",
         flag: fr
     }
-
 ]
 
 const Navbar = () => {
@@ -45,10 +44,10 @@ const Navbar = () => {
             right={0}
             zIndex={1000}>
 
-            <Flex  minH="60px" 
+            <Flex minH="60px"
                 borderBottom={1} borderStyle="solid" align={'center'}
                 borderColor={"gray.200"}
-                justify={'space-between'} 
+                justify={'space-between'}
                 bg={useColorModeValue("gray.800", "white")}
                 py={{base: 2}}
                 px={{base: 2, md: 4}}>
@@ -58,27 +57,24 @@ const Navbar = () => {
                     display={{base: "flex", md: "none"}}>
                     <MobileNav />
 
-                  
                 </Flex>
                 <Stack justify={'center'} direction="row" spacing={8} align="center">
                     <DesktopNav />
                 </Stack>
 
-
                 <Stack p={2} justify={'center'} direction={"row"}>
 
                     {languageOptions.map((languageOption) => (
                         <Text
-                          
                             key={`${languageOption.value}`}
                             bg={"gray.800"}
                             borderRadius={"30px"}
-                            display={'block'} 
+                            display={'block'}
                             textAlign={'center'}
                             onClick={() => {
                                 i18n.changeLanguage(languageOption.value)
                             }}
-                            w={4} h={4} 
+                            w={4} h={4}
                             
                             color={"white"}
                             fontSize={"12px"}
@@ -89,19 +85,15 @@ const Navbar = () => {
                             }}>
                                 
                             <Image w={3} h={3} src={languageOption.flag} alt={languageOption.name} />
-                           
                             <span style={{
                                 fontWeight: i18n.language === languageOption.value ? "bord" : "normal",
                                 color: i18n.language === languageOption.value ? "red" : "white",}}>
                                 {languageOption.name}
                             </span>
                         </Text>
-
                     ))}
-
                 </Stack>
             </Flex>
-
         </Box>
     );
 }

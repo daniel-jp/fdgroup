@@ -38,9 +38,9 @@ const MobileNav = () => {
         <DrawerContent bg={"gray.800"} color={"gray.400"}>
           <DrawerCloseButton />
           <DrawerHeader> <Text fontFamily={"'Intel', sans-serif"} mt={-4}><FdgLogo/></Text> </DrawerHeader>
-          <DrawerBody>   
+          <DrawerBody>
              <Stack fontFamily={"'Inter', sans-serif"} fontWeight={'bold'} spacing={4}>
-              <MobileNavItem  href={"/"}> 
+              <MobileNavItem href={"/"}>
               {t("home0")}
               </MobileNavItem>
               <MobileNavItem  href={"/about"}> 

@@ -30,10 +30,10 @@ const DesktopNav = () => {
         spacing={{sm: '12px', md: '14px', lg: 8}} p={2}>
 
         <Text> 
-          <Link to={"/"}  _activeLink={{color: "red.600"}} as={RouteLink}  
+          <Link to={"/"} _activeLink={{color: "red.600"}} as={RouteLink}
            onClick={() => setActiveLink("/")} _hover={{  textDecoration: "none",color:"red.600"}}
-           color={"gray.400"}>  
-               {t("home0")} 
+            color={"gray.400"}>
+            {t("home0")}
             </Link>
         </Text>
         
@@ -49,15 +49,15 @@ const DesktopNav = () => {
           
         </Text>
 
-        {/* <Text 
+        {/* <Text
         as={RouteLink}
         onClick={() => setActiveLink("/products")} color={"gray.400"}
-        _hover={{textDecoration: "none", color: "red.600"}} to={'/products'} > 
-        
+        _hover={{textDecoration: "none", color: "red.600"}} to={'/products'} >
+
         </Text> */}
 
         <Text> 
-          <Link to="/services"   _activeLink={{color: "red.600"}} as={RouteLink} 
+          <Link to="/services" _activeLink={{color: "red.600"}} as={RouteLink}
           onClick={() => setActiveLink("/services")} color={"gray.400"}
           _hover={{ textDecoration: "none", color:"red.600"}}>{t("home4")}</Link>
         </Text>
